@@ -1,1 +1,0 @@
-Yamls I have submitted for a multiworld on the AD server, or other 18+ area. If you are reading this on GitHub I have failed catastrophically.
