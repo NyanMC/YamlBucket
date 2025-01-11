@@ -1,0 +1,30 @@
+﻿# Multiworld: STB11: May the most popular yaml win!
+# Games: Minecraft
+# Item Links: MinecraftBeeTraps
+# !!! WARNING: EXTREME numbers of Bee Traps !!!
+
+name: Minecraft{number}
+description: Ya like jazz?
+game: Minecraft
+
+Minecraft:
+  advancement_goal: 60
+  required_bosses: none
+  combat_difficulty: easy
+  bee_traps: 100
+  send_defeated_mobs: 'true'
+  starting_items:
+    [
+      { "item": "minecraft:bee_spawn_egg", amount: 512 }
+    ]
+
+  start_inventory:
+    Shulker Box: 2
+    Bee Trap: 20
+
+  item_links:
+    - name: MinecraftBeeTraps
+      item_pool:
+        - Bee Trap
+      replacement_item: "Bee Trap"
+      link_replacement: true

@@ -1,0 +1,37 @@
+# Multiworld: Free games in an async near you
+# Games: VVVVVV, Celeste 64, DLCQuest
+
+name: ChromaVVVVVV{NUMBER}
+game: VVVVVV
+VVVVVV:
+  start_location_hints:
+  - Doing things the hard way
+  - Edge Games
+  - Prize for the Reckless
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  move_shuffle: 'true'
+  total_strawberries: '46'
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  start_location_hints: Badeline Cassette Strawberry
+  strawberries_required_percentage: random-range-high-50-100
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: shuffled
+  coinbundlequantity: '10'
+  permanent_coins: 'true'
+  start_inventory:
+    Night Map Pack: 1
+    Pause Menu Pack: 1

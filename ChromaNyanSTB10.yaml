@@ -1,0 +1,27 @@
+﻿# Multiworld: STB10: The return of the VIP
+# Games: Here Comes Niko, Bumper Stickers
+# ChromaNiko has been updated to generate correctly on apworld 0.5.0.
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: 0
+  shuffle_handsome_frog: true
+  min_kiosk_cost: 20
+  max_kiosk_cost: 70
+  min_elevator_cost: 75
+  max_elevator_cost: 75
+  fishsanity: location
+
+---
+
+name: ChromaBumper{NUMBER}
+game: Bumper Stickers
+
+Bumper Stickers:
+  progression_balancing: 0
+  task_advances: random
+  turners: random
+  paint_cans: random
+  trap_count: random

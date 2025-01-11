@@ -1,0 +1,15 @@
+﻿# Multiworld: Chakraa's Mini Xmas Async
+# Games: Mega Man 2
+# Energylink Enabled
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: 0
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  palette_shuffle: "Mega Buster-$24;randomized"

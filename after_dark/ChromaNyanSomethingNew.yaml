@@ -1,0 +1,48 @@
+﻿# Multiworld: Something New Async
+# Games: Mega Man 2, Minecraft Dig, Terraria, Yacht Dice
+# Energylink Enabled for Mega Man 2
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: 0
+  energy_link: 'true'
+  starting_robot_master: random
+  consumables: all
+  wily_5_requirement: 8
+  palette_shuffle: randomized
+
+---
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+
+Minecraft Dig:
+  progression_balancing: 0
+  local_items: True Golden Pick
+
+---
+
+name: ChromaTerraria{NUMBER}
+game: Terraria
+
+Terraria:
+  progression_balancing: 0
+  goal: zenith
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+
+Yacht Dice:
+  progression_balancing: 0
+  game_difficulty: medium
+  score_for_goal: 1000
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: random
+  number_of_roll_fragments_per_roll: random
+  alternative_categories: random
+  points_size: mix
+  add_bonus_points: all_of_it

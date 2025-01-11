@@ -1,0 +1,91 @@
+﻿# Multiworld: Just Another Async
+# Games: Super Mario 64, Super Mario World, Undertale Beta, Celeste 64
+
+name: ChromaNyanSM64{NUMBER}
+description: wahoo
+
+game: Super Mario 64
+requires:
+  version: 0.5.0
+
+Super Mario 64:
+  progression_balancing: '0'
+  buddy_checks: 'true'
+  exclamation_boxes: 1ups_only
+  enable_coin_stars: 'false'
+  enable_move_rando: 'true'
+
+---
+
+name: ChromaNyanSMW{NUMBER}
+description: this one's gonna be the most difficult
+
+game: Super Mario World
+requires:
+  version: 0.5.0
+
+Super Mario World:
+  progression_balancing: '0'
+  goal: yoshi_egg_hunt
+  percentage_of_yoshi_eggs: 90
+  level_shuffle: 'true'
+  exclude_special_zone: 'true'
+  boss_shuffle: full
+  swap_donut_gh_exits: 'true'
+  overworld_speed: fast
+  music_shuffle: full
+  mario_palette: random
+  level_palette_shuffle: on_curated
+  overworld_palette_shuffle: on_curated
+  starting_life_count: 50
+
+---
+
+name: ChromaNyanUT{NUMBER}
+description: human, i remember you're neutrals
+
+game: Undertale
+requires:
+  version: 0.5.0
+
+Undertale:
+  progression_balancing: '0'
+
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  temy_include: 'false'
+  cut_items: 'true'
+  ice_traps: 5
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  gifting: 'true'
+
+---
+
+name: ChromaNyanCel64{NUMBER}
+description: pain and suffering
+
+game: Celeste 64
+requires:
+  version: 0.5.0
+
+Celeste 64:
+  progression_balancing: '0'
+  death_link_amnesty: 10
+  total_strawberries: 40
+  strawberries_required_percentage: 80
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  badeline_chaser_source: strawberries
+  badeline_chaser_frequency: 1
+  badeline_chaser_speed: 3

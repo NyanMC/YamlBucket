@@ -1,0 +1,241 @@
+﻿# Multiworld: Just a Third Async
+# Games: Super Mario 64, Undertale Beta, Celeste 64, Clique x12
+
+name: ChromaNyanSM64{NUMBER}
+description: wahoo
+
+game: Super Mario 64
+requires:
+  version: 0.5.0
+
+Super Mario 64:
+  progression_balancing: '0'
+  buddy_checks: 'true'
+  exclamation_boxes: 1ups_only
+  enable_coin_stars: 'false'
+  enable_move_rando: 'true'
+  first_bowser_star_door_cost: 25 # 30 stars
+  basement_star_door_cost: 42 # 50 stars
+  second_floor_star_door_cost: 58 # 70 stars
+  mips1_cost: 25
+  mips2_cost: 42
+  stars_to_finish: 75 # 90 stars
+  completion_type: all_bowser_stages
+
+---
+
+name: ChromaNyanUT{NUMBER}
+description: human, i remember you're neutrals
+
+game: Undertale
+requires:
+  version: 0.5.0
+
+Undertale:
+  progression_balancing: '0'
+
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  temy_include: 'false'
+  cut_items: 'true'
+  ice_traps: 5
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  gifting: 'true'
+
+---
+
+name: ChromaNyanCel64{NUMBER}
+description: slightly less pain and suffering
+
+game: Celeste 64
+requires:
+  version: 0.5.0
+
+Celeste 64:
+  progression_balancing: '0'
+  death_link_amnesty: 10
+  total_strawberries: 40
+  strawberries_required_percentage: 87
+  logic_difficulty: standard
+  move_shuffle: 'true'
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+
+---
+
+name: ChrCliqueRed{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: red
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueOrange{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: orange
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueYellow{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: yellow
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueGreen{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: green
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueCyan{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: cyan
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueBlue{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: blue
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueMagenta{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: magenta
+  hard_mode: 'true'
+
+---
+
+name: ChrCliquePurple{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: purple
+  hard_mode: 'true'
+
+---
+
+name: ChrCliquePink{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueBrown{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: brown
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueWhite{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: white
+  hard_mode: 'true'
+
+---
+
+name: ChrCliqueBlack{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: black
+  hard_mode: 'true'

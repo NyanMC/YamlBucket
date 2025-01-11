@@ -1,0 +1,105 @@
+﻿# Multiworld: Just a Sixth Async
+# Games: Clique XXL, ChecksFinder, Warehouse, Mega Man 2, Yacht Dice x3
+# Energylink Enabled for Mega Man 2
+
+name: ChromaCliqueXXL{NUMBER}
+game: Manual_CliqueXXL_ChromaNyan
+
+Manual_CliqueXXL_ChromaNyan:
+  progression_balancing: disabled
+
+---
+
+name: ChromaChecks{NUMBER}
+game: ChecksFinder
+
+ChecksFinder:
+  progression_balancing: disabled
+  priority_locations: Everywhere
+
+---
+
+name: ChromaWarehouse{NUMBER}
+game: Manual_Warehouse_Alexander230
+
+Manual_Warehouse_Alexander230:
+  progression_balancing: disabled
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: disabled
+  energy_link: 'true'
+  consumables: all
+  strict_weakness: 'true'
+  random_weakness: randomized
+  palette_shuffle: "Mega Buster-$24;randomized"
+  reduce_flashing: virtual_console
+  random_music: shuffled
+  priority_locations: Everywhere
+
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty: medium
+  score_for_goal: 1000
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: all_of_it
+
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty: medium
+  score_for_goal: 1000
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: all_of_it
+
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty: medium
+  score_for_goal: 1000
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: all_of_it

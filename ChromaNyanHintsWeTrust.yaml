@@ -1,0 +1,12 @@
+﻿# Multiworld: Dragorrod's guided play series: In the hints we trust
+# Games: Clique
+
+name: ChromaClique{NUMBER}
+description: rather satisfied
+game: Clique
+
+Clique:
+  color: random
+  hard_mode: 'true'
+  start_inventory:
+    Feeling of Satisfaction: 10

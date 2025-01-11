@@ -1,0 +1,70 @@
+﻿# Multiworld: Catch 'Em All Round 2
+# Games: Here Comes Niko, Minecraft Dig, Super Cat Tales, Mega Man 2, DLCQuest, ChecksFinder
+# Energylink Enabled for Mega Man 2
+# !!! WARNING: Coinsanity 1 DLCQuest !!!
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+Here Comes Niko!:
+  progression_balancing: disabled
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: 'true'
+  fishsanity: insanity
+  goal_completion: employee
+  min_kiosk_cost: 10
+  max_kiosk_cost: 70
+
+---
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+Minecraft Dig:
+  progression_balancing: disabled
+  local_items: True Golden Pick
+
+---
+
+name: ChromaCat{NUMBER}
+game: Manual_SuperCatTales_ChromaNyan
+Manual_SuperCatTales_ChromaNyan:
+  progression_balancing: disabled
+  filler_traps: random
+  local_items: Rusted Bell
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: disabled
+  energy_link: 'true'
+  consumables: all
+  strict_weakness: 'true'
+  random_weakness: randomized
+  palette_shuffle: "Mega Buster-$24;randomized"
+  reduce_flashing: virtual_console
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: shuffled
+  coinbundlequantity: 1
+  permanent_coins: 'true'
+  progression_balancing: disabled
+  start_inventory:
+    Pause Menu Pack: 1
+
+---
+
+name: ChromaChecks{NUMBER}
+game: ChecksFinder
+
+ChecksFinder:
+  progression_balancing: disabled

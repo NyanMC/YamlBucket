@@ -1,0 +1,74 @@
+﻿# Multiworld: STB9 Triple Threat
+# Games: Yacht Dice x3
+
+name: ChromaDiceEasy{NUMBER}
+
+game: Yacht Dice
+requires:
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
+
+Yacht Dice:
+  progression_balancing: extreme
+  game_difficulty: easy
+  score_for_goal: 1000
+  minimal_number_of_dice_and_rolls: 8_dice_and_2_rolls
+  number_of_dice_fragments_per_dice: 1
+  number_of_roll_fragments_per_roll: 1
+
+  weight_of_dice: 0
+  weight_of_roll: 50
+  weight_of_fixed_score_multiplier: 50
+  weight_of_double_category: 100
+  weight_of_points: 25
+  points_size: large
+
+  add_bonus_points: all_of_it
+
+---
+
+name: ChromaDiceMedium{NUMBER}
+
+game: Yacht Dice
+requires:
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
+
+Yacht Dice:
+  score_for_last_check: 750
+  score_for_goal: 750
+  minimal_number_of_dice_and_rolls: 6_dice_and_4_rolls
+  number_of_dice_fragments_per_dice: 3
+  number_of_roll_fragments_per_roll: 3
+  alternative_categories: 8
+
+  weight_of_roll: 15
+  weight_of_fixed_score_multiplier: 20
+  weight_of_step_score_multiplier: 10
+  weight_of_double_category: 40
+  weight_of_points: 30
+
+---
+
+name: ChromaDiceHard{NUMBER}
+
+game: Yacht Dice
+requires:
+  version: 0.5.0 # Version of Archipelago required for this yaml to work as expected.
+
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty: hard
+  score_for_last_check: 500
+  score_for_goal: 500
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: 16
+
+  weight_of_dice: 0
+  weight_of_roll: 30
+  weight_of_fixed_score_multiplier: 20
+  weight_of_step_score_multiplier: 40
+  weight_of_double_category: 20
+  weight_of_points: 30
+  points_size: small
+
+  add_bonus_points: never

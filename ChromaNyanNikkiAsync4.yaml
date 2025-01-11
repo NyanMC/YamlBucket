@@ -1,0 +1,251 @@
+﻿# Multiworld: Just a Fourth Async
+# Games: Yacht Dice, Undertale Beta, Clique x12
+# Requires Item Plando to function correctly
+
+name: ChromaNyanDice{NUMBER}
+description: getting kinda dicey
+
+game: Yacht Dice
+requires:
+  version: 0.5.0
+
+Yacht Dice:
+  progression_balancing: '0'
+  minimal_number_of_dice_and_rolls: 8_dice_and_2_rolls
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  allow_manual_input: no_dont_allow
+  add_story_chapters: sure
+
+---
+
+name: ChromaNyanUT{NUMBER}
+description: human, i remember you're neutrals
+
+game: Undertale
+requires:
+  version: 0.5.0
+
+Undertale:
+  progression_balancing: '0'
+
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  temy_include: 'false'
+  cut_items: 'true'
+  ice_traps: 5
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  gifting: 'true'
+
+  plando_items:
+    - item:
+        ITEM: 1
+      location: The Big Red Button
+      from_pool: true
+      world: ChromaBONUS
+      force: true
+
+---
+
+name: ChromaRed{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: red
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaOrange{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: orange
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaYellow{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: yellow
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaGreen{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: green
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaCyan{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: cyan
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaBlue{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: blue
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaMagenta{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: magenta
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaPurple{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: purple
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaPink{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: pink
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaBrown{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: brown
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaWhite{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: white
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaBlack{NUMBER}
+description: clique
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: black
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaBONUS{NUMBER}
+description: clique but deluxe edition
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: '0'
+  color: random
+  hard_mode: 'true'
+  start_location_hints: The Big Red Button

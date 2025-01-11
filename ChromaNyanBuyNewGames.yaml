@@ -1,0 +1,10 @@
+﻿# Multiworld: Buy New Games. Or Else.
+# Games: A Hat in Time (No DLC)
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: disabled
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'

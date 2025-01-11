@@ -1,0 +1,37 @@
+﻿# Multiworld: "My First ASYNC"
+# Games: Super Mario 64, ChecksFinder
+
+name: ChromaSM64{NUMBER}
+description: blario 64
+
+game: Super Mario 64
+requires:
+  version: 0.5.0
+
+Super Mario 64:
+  progression_balancing: disabled
+  area_rando: courses_and_secrets_separate
+  buddy_checks: 'true'
+  exclamation_boxes: 1ups_only
+  progressive_keys: 'false'
+  enable_coin_stars: 'false'
+  enable_move_rando: 'true'
+
+  first_bowser_star_door_cost: 25
+  basement_star_door_cost: 42
+  second_floor_star_door_cost: 58
+  mips1_cost: 25
+  mips2_cost: 42
+  stars_to_finish: 75
+
+---
+
+name: ChromaChecks{NUMBER}
+description: those checks will be found
+
+game: ChecksFinder
+requires:
+  version: 0.5.0
+
+ChecksFinder:
+  progression_balancing: disabled

@@ -1,0 +1,10 @@
+﻿# Multiworld: A small Dragorrod's Holiday async
+# Games: MetroCUBEvania
+
+name: ChromaCUBE{NUMBER}
+game: MetroCUBEvania
+
+MetroCUBEvania:
+  progression_balancing: disabled
+  extra_checks: 'true'
+  extra_checkpoint: 'true'

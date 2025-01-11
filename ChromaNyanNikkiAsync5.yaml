@@ -1,0 +1,261 @@
+﻿# Multiworld: Just a Fifth Async
+# Games: Celeste 64, ChecksFinder, Minecraft, Yacht Dice, DLCQuest, Here Comes Niko, Clique x10
+# ChromaNiko has been updated to generate correctly on apworld 0.5.0.
+
+name: ChromaCel64{NUMBER}
+description: strawb get
+
+game: Celeste 64
+requires:
+  version: 0.5.0
+
+Celeste 64:
+  progression_balancing: disabled
+  total_strawberries: 46
+  strawberries_required_percentage: 90
+  logic_difficulty: standard
+  move_shuffle: 'true'
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+
+---
+
+name: ChromaChecks{NUMBER}
+description: checksfinder has basically no options anyway
+
+game: ChecksFinder
+requires:
+  version: 0.5.0
+
+ChecksFinder:
+  progression_balancing: disabled
+
+---
+
+name: ChromaCraft{NUMBER}
+description: i am placing blocks and shit cause i'm in fucking minecraft
+
+game: Minecraft
+requires:
+  version: 0.5.0
+
+Minecraft:
+  progression_balancing: disabled
+  advancement_goal: 70
+  egg_shards_required: 10
+  egg_shards_available: 12
+  required_bosses: none
+
+---
+
+name: ChromaDice{NUMBER}
+description: well cuphead and his pal mugman, they like to roll the dice
+
+game: Yacht Dice
+requires:
+  version: 0.5.0
+
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty: hard
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  allow_manual_input: yes_allow
+  weight_of_step_score_multiplier: 10
+  points_size: mix
+
+---
+
+name: ChromaDLCQ{NUMBER}
+description: purchase the description DLC to view this description
+
+game: DLCQuest
+requires:
+  version: 0.5.0
+
+DLCQuest:
+  progression_balancing: disabled
+  coinsanity: coin
+  permanent_coins: 'true'
+  ending_choice: 'true'
+  campaign: both
+  item_shuffle: shuffled
+  start_inventory:
+    Pause Menu Pack: 1
+
+---
+
+name: ChromaNiko{NUMBER}
+description: niko is rapidly approaching your location. run.
+
+game: Here Comes Niko!
+requires:
+  version: 0.5.0
+
+Here Comes Niko!:
+  progression_balancing: disabled
+  shuffle_handsome_frog: 'true'
+  fishsanity: location
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation
+
+---
+
+name: ChromaClique{number}
+
+description: funny button time
+
+game: Clique
+requires:
+  version: 0.5.0
+
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_hints: Button Activation

@@ -1,0 +1,48 @@
+﻿# Multiworld: Roguelike Async 2
+# Games: Either Minecraft or Super Cat Tales
+# Deathlink Enabled
+# The Roguelike Async featured "Yaml Upgrades" to make these settings easier. To emulate this change, all possible options are weighted equally.
+
+name: ChromaNyan{NUMBER}
+
+description: so we back in the mine
+
+game:
+  Minecraft: 1
+  Manual_SuperCatTales_ChromaNyan: 1
+requires:
+  version: 0.5.0
+
+Minecraft:
+  advancement_goal: # 70 # change to 50, then 30
+    70: 1
+    50: 1
+    30: 1
+  egg_shards_required: # 15 # change to 10, then 5
+    15: 1
+    10: 1
+    5: 1
+  egg_shards_available: 15
+  required_bosses:
+    ender_dragon: 1
+    wither: 1
+  combat_difficulty: # hard # change to normal, then easy
+    hard: 1
+    normal: 1
+    easy: 1
+  bee_traps: # 100 # change to 50, then 0
+    100: 1
+    50: 1
+    0: 1
+  death_link: 'true'
+Manual_SuperCatTales_ChromaNyan:
+  progression_balancing: # 0 # change to 20, then 40, then 60
+    0: 1
+    20: 1
+    40: 1
+    60: 1
+  filler_traps: # random-high # change to random, then random-low
+    random-high: 1
+    random: 1
+    random-low: 1
+  death_link: 'true'
