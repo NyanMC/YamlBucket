@@ -1,0 +1,230 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Just an Eighth Async
+# Games: A Hat in Time, Celeste 64 Beta, Clique, Yacht Dice Beta x3, DLCQuest, Undertale Beta, Rogue Legacy
+# Requires Item Plando to function correctly
+# ! Clique's starting inventory contains tons of items !
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: 0
+  EndGoal: # i think finale is a far more interesting and fitting goal than rush hour, but rush hour's cool in its own ways
+    finale: 3
+    rush_hour: 1
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  ActRandomizer: insanity
+  FinaleShuffle: 'true'
+  StartingChapter: # with contracts and ziplines shuffled, and chapter costs being as steep as i'm making them, a chapter 3 or 4 start sucks, so let's not
+    '1': 1
+    '2': 1
+  LowestChapterCost: 5
+  HighestChapterCost: 45
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 6
+  FinalChapterMinCost: 50
+  FinalChapterMaxCost: 50
+  RandomizeHatOrder:
+    'true': 1
+    time_stop_last: 2
+  UmbrellaLogic: 'true'
+  YarnCostMin: random-high
+  YarnCostMax: 12
+  YarnAvailable: 80
+  MinExtraYarn: 15
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityCheckCount: random-range-1-20 # rolling a super low number on this would be really funny, and worse case it's slightly harder than vanilla
+  EnableDLC2: 'true'
+  BaseballBat: random
+  MetroMinPonCost: 10
+  MetroMaxPonCost: 100 # make shop items cheaper to accomodate for the fact we're adding a ton of them
+  NyakuzaThugMinShopItems: 5
+  NyakuzaThugMaxShopItems: 5
+  exclude_locations:
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  progression_balancing: disabled
+  move_shuffle: 'true'
+  total_strawberries: 55 # it won't *actually* generate with this many strawberries. it'll be more in the ballpark of ~30-ish, but it'll generate as many as possible
+  strawberries_required_percentage: random-high
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: baddy
+
+---
+
+name: ChromaClique{NUMBER}
+game: Clique
+Clique:
+  # Game Options
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+  start_inventory:
+    Feeling of Satisfaction: 10000
+  # erbs when he allows me to add items to my starting inventory (he is clueless)
+  # ok but seriously if this is too much i can tone it down. i already had to tone it down, originally it was 1000000 and the generator was NOT happy
+
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 2
+    medium: 4
+    hard: 2
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  percentage_alternative_categories: random
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  double_category_calculation: increment
+  weight_of_points: random
+  points_size: mix
+
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 2
+    medium: 4
+    hard: 2
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  percentage_alternative_categories: random
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  double_category_calculation: increment
+  weight_of_points: random
+  points_size: mix
+  
+---
+
+name: ChromaDice{number}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 2
+    medium: 4
+    hard: 2
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  percentage_alternative_categories: random
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  double_category_calculation: increment
+  weight_of_points: random
+  points_size: mix
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: shuffled
+  coinbundlequantity: 1
+  permanent_coins: 'true'
+  progression_balancing: disabled
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+requires:
+  plando: items
+
+Undertale:
+  progression_balancing: disabled
+  route_required: genocide
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+  key_hunt: 'true'
+  key_pieces: 4
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  rando_love: 'true'
+  kill_sanity: 'true'
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  gifting: 'true'
+
+  # for an authentic genocide experience, all my key pieces are in my own world placed at locations that require me to kill everyone to collect in-logic.
+  # this forces me to go through every area, and forces me to receive all my population packs before i can even consider facing off against sans.
+  plando_items:
+    - items:
+        Key Piece: 4
+      locations:
+        - Toriel Fight
+        - Papyrus Fight
+        - Undyne Fight
+        - Mettaton Fight
+      from_pool: true
+      world: false
+      force: true
+
+---
+
+name: ChromaLegacy{NUMBER}
+game: Rogue Legacy
+Rogue Legacy:
+  progression_balancing: disabled
+  starting_class: barbarian
+  fairy_chests_per_zone: 1
+  chests_per_zone: 25
+  universal_fairy_chests: 'true'
+  disable_charon: 'true'
+  require_purchasing: 'false'
+  progressive_blueprints: 'true'
+  number_of_children: random
+  exclude_locations: Carnival

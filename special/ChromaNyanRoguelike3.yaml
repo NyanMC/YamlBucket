@@ -1,0 +1,688 @@
+﻿name: ChromaNyan
+
+game:
+  Mega Man 2: 5 # 22 upgrades
+  Mega Man 3: 5 # 19 upgrades
+  Minecraft Dig: 2 # 13 upgrades, will be sending deathlinks manually
+  VVVVVV: 2 # 13 upgrades
+  Celeste 64: 3 # 16 upgrades
+  A Hat in Time: 5 # 31 upgrades
+  Super Mario 64: 5 # 16 upgrades
+
+Mega Man 2:
+  progression_balancing: 0
+  accessibility: full
+  death_link: 'true'
+  energy_link: 'false'
+
+  starting_robot_master:
+    heat_man: 1
+    air_man: 1
+    wood_man: 1
+    bubble_man: 1
+    quick_man: 1
+    flash_man: 1
+    metal_man: 1
+    crash_man: 1
+  consumables: all
+  yoku_jumps: 'true' # this will be painful, but this is also partially why item 2 is in the vault
+  enable_lasers: 'true'
+  enemy_weakness: 'true'
+  strict_weakness: 'false'
+  random_weakness: none # i wanted to do random weaknesses but it might lead to unbeatable runs
+  wily_5_requirement: 8
+  palette_shuffle: "Mega Buster-$24;randomized"
+
+  start_inventory: {} # not modifying this but just in case i need it present
+
+  vault_items:
+    Item 1 - Propeller: 1 # it's good for vertical platforming sections. also required to goal
+    Item 2 - Rocket: 1 # it's REALLY good for horizontal platforming sections. also required to goal
+    Item 3 - Bouncy: 1 # required to goal and marginally useful too
+    Metal Blade: 1 # hands down the best weapon in the game. easy to use, consumes barely any ammo, and four bosses are weak to it
+
+  upgrades:
+    - impact: 10
+      prio: -3
+      option: energy_link
+      value: true
+    - option: enemy_weakness
+      value: false
+    - impact: 7
+      operation: unmanaged
+      value: Allow Normal difficulty
+    - impact: 3
+      operations:
+        - - operation: sub
+            option: wily_5_requirement
+            value: 2
+        - - operation: sub
+            option: wily_5_requirement
+            value: 2
+        - - operation: sub
+            option: wily_5_requirement
+            value: 2
+    - prio: 3
+      impact: 2
+      operations:
+        - operation: replace
+          option:
+            - starting_robot_master
+            - heat_man
+          value: 0
+    # all weapons except metal blade
+    - operation: insert
+      option: start_inventory # needed to defeat alien so we need to have a way to get it otherwise
+      key: Bubble Lead
+      value: 1
+    - operation: item
+      value: Air Shooter
+    - operation: item
+      value: Quick Boomerang
+    - operation: item
+      value: Atomic Fire
+    - operation: item
+      value: Leaf Shield
+    - operation: item
+      value: Time Stopper
+    - operation: insert
+      option: start_inventory # needed for some checks
+      key: Crash Bomber
+      value: 1
+    # up to 5 starting e-tanks
+    - impact: 3
+      operations:
+        - - operation: insert
+            option: start_inventory
+            key: E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+Mega Man 3:
+  progression_balancing: 0
+  accessibility: full
+  death_link: 'true'
+  energy_link: 'false'
+  starting_robot_master: random
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'false'
+  random_weakness: none
+  wily_4_requirement: 8
+  palette_shuffle: "Mega Buster-$24;randomized"
+  start_inventory: {}
+
+  vault_items:
+    Rush Jet: 1 # insanely overpowered. you can fly with it. need i say more
+    Magnet Missile: 1 # neither of the three listed weapons are as OP as the metal blade, but they're also proguseful
+    Shadow Blade: 1
+    Top Spin: 1
+    
+  upgrades:
+    - impact: 10
+      prio: -3
+      option: energy_link
+      value: true
+    - option: enemy_weakness
+      value: false
+    - impact: 3
+      operations:
+        - - operation: sub
+            option: wily_4_requirement
+            value: 2
+        - - operation: sub
+            option: wily_4_requirement
+            value: 2
+        - - operation: sub
+            option: wily_4_requirement
+            value: 2
+    # all weapons except those in the vault
+    - operation: item
+      value: Needle Cannon
+    - operation: insert
+      option: start_inventory # logic *technically* checks for it in doc spark and some other places as an alternative to shadow blade. *just* in case
+      key: Gemini Laser
+      value: 1
+    - operation: insert
+      option: start_inventory # needed for some lategame checks
+      key: Hard Knuckle
+      value: 1
+    - operation: insert
+      option: start_inventory # there's a chance i may be expected to use it against gamma. better to be safe
+      key: Search Snake
+      value: 1
+    - operation: item
+      value: Spark Shock
+    - operation: insert
+      option: start_inventory # not as useful as rush jet, but would be nice to start with regardless
+      key: Rush Coil
+      value: 1
+    # up to 5 starting e-tanks
+    - impact: 3
+      operations:
+        - - operation: insert
+            option: start_inventory
+            key: E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - E-Tank
+            value: 1
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+Minecraft Dig:
+  progression_balancing: 0
+  accessibility: full
+
+  local_items:
+    - Bee Trap
+    - Creeper Trap
+    - Sand Rain
+    - Spawn Wither
+    - Goon Squad
+    - Fish Fountain
+    - Bad Air
+    - Pocket Sand
+    - Pesky Bird
+    - Flash Flood
+    - Pet the kitty
+    - Wingardium Leviosa
+    - About Face
+    - Acme Delivery
+
+  vault_items:
+    Progressive Excavation: 3
+    Progressive Pickaxe: 1
+
+  upgrades:
+    - operation: append
+      option: local_items
+      value: True Golden Pick
+    - operation: append
+      option: local_items
+      value: Golden Pick
+    - operation: append
+      option: local_items
+      value: TNT
+    - operations: # up to 3 pickaxes
+        - - operation: insert
+            option: start_inventory
+            key: Progressive Pickaxe
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - Progressive Pickaxe
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - Progressive Pickaxe
+            value: 1
+    - operations: # up to 2 shovels
+        - - operation: insert
+            option: start_inventory
+            key: Progressive Shovel
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - Progressive Shovel
+            value: 1
+    - operations: # up to 2 haste
+        - - operation: insert
+            option: start_inventory
+            key: Progressive Haste
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - Progressive Haste
+            value: 1
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+VVVVVV:
+  progression_balancing: 0
+  accessibility: full
+  music_rando: 'true'
+  area_rando: 'true'
+  door_cost: 3
+  area_cost: 'true'
+  death_link: 'true'
+  death_link_amnesty: 5
+  exclude_locations: []
+
+  vault_items:
+    Trinket 01: 1
+    Trinket 02: 1
+    Trinket 03: 1
+    Trinket 04: 1
+  
+  upgrades:
+    - operation: append
+      option: exclude_locations
+      value: Doing things the hard way
+    - operation: append
+      option: exclude_locations
+      value: Edge Games
+    - operation: append
+      option: exclude_locations
+      value: Prize for the Reckless
+    - operations:
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+    - impact: 7
+      operations:
+        - - operation: sub
+            option: door_cost
+            value: 1
+        - - operation: sub
+            option: door_cost
+            value: 1
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+Celeste 64:
+  progression_balancing: 0
+  accessibility: full
+  death_link: 'true'
+  death_link_amnesty: 5
+  logic_difficulty: hard
+  move_shuffle: 'true'
+  total_strawberries: 30
+  strawberries_required_percentage: 100
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  local_items: []
+  exclude_locations: []
+
+  vault_items:
+    Air Dash: 1
+    Ground Dash: 1
+    Climb: 1
+    Cassettes: 1
+  
+  upgrades:
+    - option: logic_difficulty
+      value: standard
+    - operation: append
+      option: exclude_locations
+      value: Badeline Cassette Strawberry
+    - prio: -2
+      impact: 8
+      operation: append
+      option: local_items
+      value: Strawberry
+    - operations:
+        - - operation: sub
+            option: strawberries_required_percentage
+            value: 10
+        - - operation: sub
+            option: strawberries_required_percentage
+            value: 10
+        - - operation: sub
+            option: strawberries_required_percentage
+            value: 10
+        - - operation: sub
+            option: strawberries_required_percentage
+            value: 10
+        - - operation: sub
+            option: strawberries_required_percentage
+            value: 10
+    - operations:
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+        - - operation: add
+            option: death_link_amnesty
+            value: 5
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+A Hat in Time:
+  progression_balancing: 0
+  accessibility: full
+  death_link: 'true'
+  EndGoal:
+    finale: 1
+    rush_hour: 1
+  ShuffleAlpineZiplines: 'true'
+  LogicDifficulty: moderate
+  ShuffleStorybookPages: 'true'
+  ShuffleActContracts: 'true'
+  ShuffleSubconPaintings: 'true'
+  NoPaintingSkips: 'false'
+  CTRLogic: sprint # idk if i even have what it takes to clear this with just sprint tbh
+  MinPonCost: 50
+  MaxPonCost: 100
+  BadgeSellerMinItems: 10
+  BadgeSellerMaxItems: 10
+  ActRandomizer: insanity
+  FinaleShuffle: 'false'
+  StartingChapter:
+    1: 1
+    2: 1
+    3: 1
+    4: 1
+  LowestChapterCost: 10
+  HighestChapterCost: 45
+  ChapterCostIncrement: 8
+  ChapterCostMinDifference: 1
+  FinalChapterMinCost: 50
+  FinalChapterMaxCost: 50
+  UmbrellaLogic: 'false' # i'm going to hate myself for this
+  StartWithCompassBadge: 'true'
+  CompassBadgeMode: closest
+  MaxExtraTimePieces: 0
+  HatItems: 'true'
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityTaskStep: 3
+  TasksanityCheckCount: 10
+  ExcludeTour: 'false'
+  EnableDLC2: 'true'
+  BaseballBat: 'true'
+  MetroMinPonCost: 10
+  MetroMaxPonCost: 100
+  NyakuzaThugMinShopItems: 5
+  NyakuzaThugMaxShopItems: 5
+  NoTicketSkips: 'false'
+  TrapChance: 100
+  start_inventory: {}
+
+  vault_items:
+    Brewing Hat: 1
+    Ice Hat: 1
+    Dweller Mask: 1
+    Hookshot Badge: 1
+
+  upgrades:
+    - impact: 7
+      option: LogicDifficulty
+      value: normal
+    - option: NoPaintingSkips
+      value: 'true'
+    - option: CTRLogic
+      value: time_stop_only
+    - option: ActRandomizer
+      value: light
+    - option: FinaleShuffle
+      value: 'true'
+    - option: CompassBadgeMode
+      value: important_first
+    - option: NoTicketSkips
+      value: 'true'
+    - operations: # make chapter costs less steep
+        - - operation: sub
+            option: ChapterCostIncrement
+            value: 3
+          - operation: sub
+            option: HighestChapterCost
+            value: 10
+        - - operation: sub
+            option: ChapterCostIncrement
+            value: 3
+          - operation: sub
+            option: HighestChapterCost
+            value: 10
+    - operations: # make goal more feasible
+        - - operation: sub
+            option: FinalChapterMinCost
+            value: 10
+          - operation: sub
+            option: FinalChapterMaxCost
+            value: 10
+        - - operation: sub
+            option: FinalChapterMinCost
+            value: 10
+          - operation: sub
+            option: FinalChapterMaxCost
+            value: 10
+        - - operation: sub
+            option: FinalChapterMinCost
+            value: 10
+          - operation: sub
+            option: FinalChapterMaxCost
+            value: 10
+    - operations: # make tasksanity less bullshit
+        - - operation: sub
+            option: TasksanityTaskStep
+            value: 1
+        - - operation: sub
+            option: TasksanityTaskStep
+            value: 1
+    - operations:
+        - - operation: sub
+            option: TrapChance
+            value: 25
+        - - operation: sub
+            option: TrapChance
+            value: 25
+        - - operation: sub
+            option: TrapChance
+            value: 25
+        - - operation: sub
+            option: TrapChance
+            value: 25
+    - operation: insert
+      option: start_inventory # this would be convenient to start with. it's logically relevant but honestly not by all that much with umbrella logic off
+      key: Umbrella
+      value: 1
+    - operation: insert
+      option: start_inventory # logically required for one of the acts in subcon, but idk if it has any other relevance
+      key: Sprint Hat
+      value: 1
+    - operation: insert
+      option: start_inventory # logically required for a couple checks but really not that much, better to be safe though
+      key: Time Stop Hat
+      value: 1
+    - operation: insert
+      option: start_inventory # not sure if logic ever requires this but i'd rather be safe
+      key: Scooter Badge
+      value: 1
+    - operation: item
+      value: No Bonk Badge
+    - operation: item
+      value: Item Magnet Badge
+    - operation: item
+      value: Fast Hatter Badge
+    - operation: insert
+      option: start_inventory # i think harder logics require no bonk in a few places
+      key: No Bonk Badge
+      value: 1
+    - operations:
+        - - operation: insert
+            option: start_inventory
+            key: Badge Pin
+            value: 1
+        - - operation: add
+            option:
+              - start_inventory
+              - Badge Pin
+            value: 1
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+Super Mario 64:
+  progression_balancing: 0
+  accessibility: full
+  area_rando: courses_and_secrets
+  buddy_checks: 'true'
+  exclamation_boxes: 'true'
+  progressive_keys: 'true'
+  enable_coin_stars: 'true'
+  enable_move_rando: 'true'
+  amount_of_stars: 120
+  first_bowser_star_door_cost: 40
+  basement_star_door_cost: 50
+  second_floor_star_door_cost: 70
+  mips1_cost: 15
+  mips2_cost: 20
+  stars_to_finish: 90
+  death_link: 'true'
+  completion_type: all_bowser_stages
+
+  vault_items:
+    Climb: 1
+    Long Jump: 1
+    Progressive Key: 2
+  
+  upgrades:
+    - operations:
+        - - option: area_rando
+            value: courses_and_secrets_separate
+        - - option: area_rando
+            value: courses_only
+        - - option: area_rando
+            value: 'off'
+    - option: buddy_checks
+      value: 'false'
+    - option: completion_type
+      value: last_bowser_stage
+    - operation: sub
+      option: first_bowser_star_door_cost
+      value: 20
+    - operation: sub
+      option: basement_star_door_cost
+      value: 25
+    - operation: sub
+      option: second_floor_star_door_cost
+      value: 40
+    - operations:
+        - - operation: sub
+            option: stars_to_finish
+            value: 25
+        - - operation: sub
+            option: stars_to_finish
+            value: 25
+    - operations:
+        - - operation: sub
+            option: amount_of_stars
+            value: 30
+        - - operation: sub
+            option: amount_of_stars
+            value: 30
+        - - operation: sub
+            option: amount_of_stars
+            value: 25
+    - impact: 3
+      operations:
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33
+        - - operation: add
+            option: progression_balancing
+            value: 33

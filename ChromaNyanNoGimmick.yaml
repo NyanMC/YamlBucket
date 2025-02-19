@@ -1,0 +1,13 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: No Gimmick Async
+# Games: Rogue Legacy
+
+name: ChromaLegacy{NUMBER}
+game: Rogue Legacy
+
+Rogue Legacy:
+  progression_balancing: disabled
+  starting_gender: lady
+  starting_class: barbarian
+  universal_fairy_chests: 'true'
+  exclude_locations: Carnival

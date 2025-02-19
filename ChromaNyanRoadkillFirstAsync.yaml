@@ -1,0 +1,31 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Roadkill's First Hosted Async!
+# Games: Minecraft Dig, DLCQuest
+# Fun Fact: You can crash Minecraft Dig by left clicking the Scaffolding in your starting inventory after the server has been restarted at least once.
+# ! Minimal Accessibility !
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+Minecraft Dig:
+  progression_balancing: 50
+  accessibility: minimal
+  local_items: True Golden Pick
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: shuffled
+  coinbundlequantity: 10
+  permanent_coins: 'true'
+  ending_choice: 'true'
+  double_jump_glitch: none
+  time_is_money: required
+  progression_balancing: 50
+  accessibility: minimal
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1

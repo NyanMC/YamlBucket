@@ -1,0 +1,33 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Sync: Celeste 64 Anniversary Celebration and v1.3.0 Beta Test
+# Game: Celeste 64 1.3.0 Beta
+
+name: ChromaNyan{NUMBER}
+description: me when i'm trans and i can double jump
+game: Celeste 64
+
+Celeste 64:
+  progression_balancing: normal
+  accessibility: full
+
+  death_link: 'false'
+  death_link_amnesty: 10
+  logic_difficulty: standard
+  move_shuffle: 'true'
+
+  total_strawberries: 30
+  strawberries_required_percentage: 80
+
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+
+  madeline_one_dash_hair_color: baddy
+  madeline_two_dash_hair_color: fire_red
+  madeline_no_dash_hair_color: royal_blue
+  madeline_feather_hair_color: any_color
+
+  badeline_chaser_source: locations
+  badeline_chaser_frequency: 0
+  badeline_chaser_speed: 3

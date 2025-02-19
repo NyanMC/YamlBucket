@@ -1,0 +1,70 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Beginners and Bad Ideas 5: Chaos Returns!
+# Games: Minecraft Dig, Clique x5
+# Requires Item Plando to function correctly
+# Fun Fact: This json file is read by Archipelago as a yaml file, so even though Visual Studio Code is yelling at me about syntax errors where the comments and dividers are at, it's perfectly fine!
+
+{
+    "name": "ChromaDig{NUMBER}",
+    "game": "Minecraft Dig",
+    "Minecraft Dig": {
+        "start_inventory": {
+            "Progressive Axe": 5,
+            "Progressive Hoe": 5
+        },
+        "local_items": [
+            "True Golden Pick"
+        ],
+        "plando_items": [
+            {
+                "item": {
+                    "Defensive Fish": 1
+                },
+                "location": "Layer 128",
+                "from_pool": false,
+                "world": false,
+                "force": true
+            }
+        ]
+    }
+}
+---
+{
+    "name": "ChromaClique{number}",
+    "game": "Clique",
+    "Clique": {
+        "hard_mode": "true"
+    }
+}
+---
+{
+    "name": "ChromaClique{number}",
+    "game": "Clique",
+    "Clique": {
+        "hard_mode": "true"
+    }
+}
+---
+{
+    "name": "ChromaClique{number}",
+    "game": "Clique",
+    "Clique": {
+        "hard_mode": "true"
+    }
+}
+---
+{
+    "name": "ChromaClique{number}",
+    "game": "Clique",
+    "Clique": {
+        "hard_mode": "true"
+    }
+}
+---
+{
+    "name": "ChromaClique{number}",
+    "game": "Clique",
+    "Clique": {
+        "hard_mode": "true"
+    }
+}

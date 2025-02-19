@@ -1,0 +1,132 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Just a Seventh Async
+# Games: Mega Man 2, Mega Man 3, Warehouse, Checksfinder, Yacht Dice x3
+# Energylink Enabled for Mega Man 2, Mega Man 3
+# ! Priority Vault !
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+Mega Man 2:
+  progression_balancing: disabled
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_5_requirement: random-high
+  palette_shuffle: "Mega Buster-$24;randomized"
+
+---
+
+name: ChromaMM3{NUMBER}
+description: why do they call him mega man anyway he looks pretty normal sized to me
+game: Mega Man 3
+Mega Man 3:
+  progression_balancing: disabled
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_4_requirement: random-high
+  palette_shuffle: "Mega Buster-$24;randomized"
+
+---
+
+name: ChromaWarehouse{NUMBER}
+game: Manual_Warehouse_Alexander230
+Manual_Warehouse_Alexander230:
+  progression_balancing: disabled
+  priority_locations: Vault
+
+---
+
+name: ChromaChecks{NUMBER}
+game: ChecksFinder
+ChecksFinder:
+  progression_balancing: disabled
+  priority_locations: Everywhere
+
+---
+
+name: ChromaDice{number}
+description: roll my dice
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 1
+    medium: 1
+    hard: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure
+
+---
+
+name: ChromaDice{number}
+description: roll my dice
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 1
+    medium: 1
+    hard: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure
+
+---
+
+name: ChromaDice{number}
+description: roll my dice
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: disabled
+  game_difficulty:
+    easy: 1
+    medium: 1
+    hard: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure

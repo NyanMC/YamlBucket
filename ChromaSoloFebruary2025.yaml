@@ -1,0 +1,241 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Solo Async February 2025
+# Games: A Hat in Time, Bumper Stickers, Celeste 64 Beta, Clique, DLCQuest, Here Comes Niko!, Mega Man 2, Mega Man 3, MetroCUBEvania, Minecraft Dig,
+# Rogue Legacy, Super Mario 64, Super Mario World, Undertale Beta, Yacht Dice
+# Energylink Enabled for Mega Man 2, Mega Man 3
+# ! Blocksanity !
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+A Hat in Time:
+  progression_balancing: 0
+  EndGoal: finale
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  BadgeSellerMinItems: 10
+  BadgeSellerMaxItems: 10
+  ActRandomizer: insanity
+  FinaleShuffle: 'true'
+  StartingChapter: random
+  LowestChapterCost: 5
+  HighestChapterCost: 45
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 6
+  FinalChapterMinCost: 50
+  FinalChapterMaxCost: 50
+  RandomizeHatOrder: time_stop_last
+  UmbrellaLogic: 'true'
+  YarnCostMin: 12
+  YarnCostMax: 12
+  YarnAvailable: 70
+  MinExtraYarn: 10
+  EnableDLC1: 'true'
+  ShipShapeCustomTaskGoal: 1
+  EnableDLC2: 'true'
+  BaseballBat: random
+  NyakuzaThugMinShopItems: 5
+  NyakuzaThugMaxShopItems: 5
+
+---
+
+name: ChromaBumper{NUMBER}
+game: Bumper Stickers
+Bumper Stickers:
+  progression_balancing: 0
+  task_advances: 5
+  turners: 5
+  paint_cans: 5
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  progression_balancing: disabled
+  move_shuffle: 'true'
+  total_strawberries: 55
+  strawberries_required_percentage: random-high
+
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+
+---
+
+name: ChromaClique{NUMBER}
+game: Clique
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: shuffled
+  coinbundlequantity: low
+  permanent_coins: 'true'
+  progression_balancing: 0
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1
+
+---
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+Here Comes Niko!:
+  progression_balancing: 0
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: 'true'
+  fishsanity: insanity
+  goal_completion: employee
+  min_kiosk_cost: 20
+  max_kiosk_cost: 70
+  min_elevator_cost: 79
+  max_elevator_cost: 79
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+Mega Man 2:
+  # Game Options
+  progression_balancing: 0
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_5_requirement: random-high
+  palette_shuffle: randomized
+
+---
+
+name: ChromaMM3{NUMBER}
+game: Mega Man 3
+Mega Man 3:
+  # Game Options
+  progression_balancing: 0
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_4_requirement: random-high
+  palette_shuffle: randomized
+
+---
+
+name: ChromaCUBE{NUMBER}
+game: MetroCUBEvania
+MetroCUBEvania:
+  progression_balancing: 0
+  extra_checks: 'true'
+  medal_hunt: 'true'
+  extra_checkpoint: 'true'
+
+---
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+Minecraft Dig:
+  progression_balancing: 0
+
+---
+
+name: ChromaLegacy{NUMBER}
+game: Rogue Legacy
+Rogue Legacy:
+  progression_balancing: 0
+  starting_class: barbarian
+  fairy_chests_per_zone: 0
+  chests_per_zone: 30
+  disable_charon: 'true'
+
+---
+
+name: ChromaSM64{NUMBER}
+game: Super Mario 64
+Super Mario 64:
+  progression_balancing: 0
+  buddy_checks: 'true'
+  exclamation_boxes: 'true'
+  enable_move_rando: 'true'
+  first_bowser_star_door_cost: 40
+  basement_star_door_cost: 50
+  second_floor_star_door_cost: 70
+  mips1_cost: 35
+  mips2_cost: 70
+  stars_to_finish: 90
+
+---
+
+name: ChromaSMW{NUMBER}
+game: Super Mario World
+Super Mario World:
+  progression_balancing: 0
+  goal: yoshi_egg_hunt
+  max_yoshi_egg_cap: 255
+  percentage_of_yoshi_eggs: random-high
+  bonus_block_checks: 'true'
+  blocksanity: 'true'
+  bowser_castle_doors: fast
+  level_shuffle: 'true'
+  exclude_special_zone: 'true'
+  boss_shuffle: simple
+  swap_donut_gh_exits: 'true'
+  overworld_speed: fast
+  mario_palette: random
+  level_palette_shuffle: on_curated
+  overworld_palette_shuffle: on_curated
+  starting_life_count: 99
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+Undertale:
+  progression_balancing: 0
+  route_required: genocide
+  rando_stats: 'true'
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  ice_traps: 10
+  kill_sanity: 'true'
+  kill_sanity_pack_size: 5
+  prog_armor: 'true'
+  prog_weapons: 'true'
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: 0
+  game_difficulty: medium
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: all_of_it
