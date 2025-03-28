@@ -1,0 +1,57 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: One for One
+# Games: Jigsaw, ChecksFinder x2, Clique x3
+# ! High Check Count Jigsaw !
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+Jigsaw:
+  progression_balancing: disabled
+  number_of_pieces: 1000
+  percentage_of_merges_that_are_checks: 100
+  maximum_number_of_checks: 1000
+  percentage_of_extra_pieces: 10
+  piece_order: every_piece_fits # that way it really is 1:1
+  strictness_piece_order: 100
+  number_of_checks_out_of_logic: 10
+
+---
+
+name: ChromaChecks{number}
+game: ChecksFinder
+ChecksFinder:
+  progression_balancing: disabled
+  
+---
+
+name: ChromaChecks{number}
+game: ChecksFinder
+ChecksFinder:
+  progression_balancing: disabled
+
+---
+
+name: ChromaClique{number}
+game: Clique
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+Clique:
+  progression_balancing: disabled
+  color: random
+  hard_mode: 'true'

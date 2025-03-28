@@ -1,0 +1,30 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Radio Archipelago 2: The Fall of Denver
+# Games: Minecraft Dig, Mega Man 2
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+
+Minecraft Dig:
+  progression_balancing: disabled
+  local_items: True Golden Pick
+  start_inventory:
+    Progressive Haste: 1
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: disabled
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness:
+    shuffled: 1
+    randomized: 1
+  wily_5_requirement: random-high
+  palette_shuffle: "Mega Buster-$35;randomized"
+  random_music: none

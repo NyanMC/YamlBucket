@@ -1,0 +1,119 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: A Kinda Specific Async
+# Games: Here Comes Niko!, A Hat in Time, Jigsaw, Minecraft Dig, Clique
+
+name: ChromaNiko{NUMBER}
+description: Here Comes Niko is tagged on Steam as a 3D Platformer, qualifying it for category 1
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: disabled
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: 'true'
+  cassette_logic: level_based
+  # i have gone past the point of insanity
+  fishsanity: insanity
+  seedsanity: insanity
+  flowersanity: insanity
+  applesanity: 'true'
+  goal_completion: hired
+  min_kiosk_cost: 20
+  max_kiosk_cost: 70
+  min_elevator_cost: 79 # whoever gets this out of the bucket will want me dead
+  max_elevator_cost: 79
+  death_link: 'true' # probably won't ever trigger but it would be funny if it did
+
+---
+
+name: ChromaHat{NUMBER}
+description: Wikipedia classifies A Hat in Time as an action adventure platformer, qualifying it for category 2
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: disabled
+  EndGoal:
+    finale: 2
+    rush_hour: 1
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  MinPonCost: 50
+  MaxPonCost: 200
+  BadgeSellerMinItems: 10
+  BadgeSellerMaxItems: 10
+  ActRandomizer:
+    light: 1
+    insanity: 2
+  FinaleShuffle: 'true'
+  StartingChapter:
+    '1': 1
+    '2': 1
+  LowestChapterCost: 5
+  HighestChapterCost: 45
+  ChapterCostIncrement: random-high
+  ChapterCostMinDifference: random-high
+  FinalChapterMinCost: 50
+  FinalChapterMaxCost: 50
+  RandomizeHatOrder:
+    'true': 1
+    time_stop_last: 1
+  UmbrellaLogic: 'true'
+
+  StartWithCompassBadge: 'false' # start without compass since we can use poptracker
+  CompassBadgeMode: important_first # ...but if we get the compass it will prioritize important items, to keep it useful
+  YarnCostMin: random-high
+  YarnCostMax: 12
+  YarnAvailable: 60
+  MinExtraYarn: random-low
+  HatItems: # rare chance for hat items jumpscare
+    'false': 9
+    'true': 1
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityCheckCount: random-range-1-20
+  EnableDLC2: 'true'
+  BaseballBat: random
+  MetroMinPonCost: 10
+  MetroMaxPonCost: 100
+  NyakuzaThugMinShopItems: 5 # capitalism
+  NyakuzaThugMaxShopItems: 5
+  EnableDeathWish: 'true'
+  DWExcludeCandles: 'false'
+  DWTimePieceRequirement: random
+  TrapChance: 5
+  local_items:
+    - Baby Trap
+    - Laser Trap
+    - Parade Trap
+
+---
+
+name: ChromaJigsaw{NUMBER}
+description: It's Jigsaw. It's explicitly stated as allowed for category 3.
+game: Jigsaw
+
+Jigsaw:
+  progression_balancing: disabled
+  number_of_pieces: 1000
+  allow_filler_items: 'true'
+  maximum_number_of_checks: 1000
+  piece_order: least_merges_possible
+  number_of_checks_out_of_logic: 10
+
+---
+
+name: ChromaDig{NUMBER}
+description: Minecraft Dig can never truly be hard BKed. If you have the time, patience, and dedication, you can goal with no items, it just sucks and no sane person would do that. It feels fitting for category 4
+game: Minecraft Dig
+
+Minecraft Dig:
+  progression_balancing: disabled
+  # i wanted to make all traps local, but...couldn't. the multiworld would literally never generate
+
+---
+
+name: ChromaClique{NUMBER}
+description: The greatest game of all time. It goes in category 5.
+
+game: Clique
+Clique: {}

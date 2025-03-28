@@ -1,0 +1,29 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Digipelago March 2025
+# Games: Here Comes Niko!, Clique
+name: ChromaNiko
+game: Here Comes Niko!
+Here Comes Niko!:
+  progression_balancing: disabled
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: 'true'
+  cassette_logic: random
+  fishsanity: insanity
+  seedsanity: insanity
+  flowersanity: insanity
+  applesanity: 'true'
+  min_kiosk_cost: random
+  max_kiosk_cost: random-high
+  min_elevator_cost: random
+  max_elevator_cost: random-high
+  death_link: 'true' # funny
+
+---
+
+name: ChromaClique
+game: Clique
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'

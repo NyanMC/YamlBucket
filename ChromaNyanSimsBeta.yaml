@@ -1,0 +1,24 @@
+# https://www.chromanyan.page/yamlheader
+# Multiworld: Sims 4 Beta Testing Async
+# Games: The Sims 4, DLCQuest
+
+name: ChromaSims4{NUMBER}
+description: the game that proves DLC Quest had a point
+game: The Sims 4
+The Sims 4:
+  progression_balancing: disabled
+  goal: bestselling_author
+  career: writer
+
+---
+
+name: ChromaDLCQ{NUMBER}
+description: speaking of which...
+game: DLCQuest
+DLCQuest:
+  coinsanity: coin
+  campaign: both
+  item_shuffle: random
+  coinbundlequantity: 20
+  permanent_coins: 'true'
+  progression_balancing: disabled
