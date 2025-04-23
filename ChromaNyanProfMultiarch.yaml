@@ -1,0 +1,96 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Prof's D&D multiarch bucket
+# Games: Candy Box 2, DLCQuest, Mega Man 2, Mega Man 3, Mega Man X
+
+name: ChromaCandy{NUMBER}
+game: Candy Box 2
+Candy Box 2:
+  # Game Options
+  progression_balancing: 0
+  quest_randomisation: everything
+  death_link: 'true'
+  teapot_hp: 1000
+  energy_link: 'true'
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  campaign: both
+  item_shuffle: shuffled
+  coinsanity: coin
+  permanent_coins: 'true'
+  coinbundlequantity: normal # i'm respectful and don't want to blow up your async
+  death_link: 'true'
+  progression_balancing: 0
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: 0
+  starting_robot_master: metal_man
+  death_link: 'true'
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  wily_5_requirement: random-high
+  random_weakness: randomized
+  palette_shuffle: "Mega Buster-$35;randomized"
+  priority_locations: Get Equipped # makes all weapon locations priority, making each stage more important
+
+---
+
+name: ChromaMM3{NUMBER}
+game: Mega Man 3
+Mega Man 3:
+  progression_balancing: 0
+  starting_robot_master: top_man
+  energy_link: 'true'
+  consumables: all
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_4_requirement: random-high
+  palette_shuffle: "Mega Buster-$35;randomized"
+  priority_locations: Get Equipped # makes all weapon locations priority, making access codes more important
+
+---
+
+game: Mega Man X
+
+Mega Man X:
+  progression_balancing: 0
+  pickupsanity: 'true'
+  starting_life_count: 99
+  energy_link: 'true'
+  jammed_buster: 'true'
+  better_walljump: 'true'
+  air_dash: 'true'
+  long_jumps: 'true'
+  hadouken_in_pool: 'false'
+  logic_helmet_checkpoints: 'true'
+  sigma_open: ['Medals', "Armor Upgrades", "Heart Tanks"]
+  sigma_medal_count: 8
+  sigma_upgrade_count: 4
+  sigma_heart_tank_count: 6
+  boss_weakness_rando: shuffled
+  boss_weakness_strictness: weakness_and_buster
+  chill_penguin_tweaks: [
+    "Jumps when starting slide",
+    "Shoot random amount of ice blocks"
+  ]
+  armored_armadillo_tweaks: [
+    "Don't absorb any projectile",
+    "Can't block incoming projectiles"
+  ]
+  spark_mandrill_tweaks: [
+    "Random Electric Spark speed"
+  ]

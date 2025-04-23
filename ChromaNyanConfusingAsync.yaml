@@ -1,0 +1,10 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: A Confusing Async
+# Games: DORONKO WANKO
+
+name: ChromaDog{NUMBER}
+description: wait, that's not right...
+game: DORONKO WANKO
+DORONKO WANKO:
+  progression_balancing: 0
+  goal: cake

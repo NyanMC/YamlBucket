@@ -1,0 +1,12 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: digipelago 2: Electric Something-or-other
+# Games: Candy Box 2
+# Deathlink & Energylink Enabled
+
+name: ChromaCandy{NUMBER}
+game: Candy Box 2
+
+Candy Box 2:
+  quest_randomisation: everything
+  death_link: 'true' # funny
+  energy_link: 'true'

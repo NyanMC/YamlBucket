@@ -1,7 +1,8 @@
 ﻿# https://www.chromanyan.page/yamlheader
 # Multiworld: Digipelago March 2025
 # Games: Here Comes Niko!, Clique
-name: ChromaNiko
+# Deathlink Enabled
+name: ChromaNiko{NUMBER}
 game: Here Comes Niko!
 Here Comes Niko!:
   progression_balancing: disabled
@@ -21,7 +22,7 @@ Here Comes Niko!:
 
 ---
 
-name: ChromaClique
+name: ChromaClique{NUMBER}
 game: Clique
 Clique:
   progression_balancing: 0

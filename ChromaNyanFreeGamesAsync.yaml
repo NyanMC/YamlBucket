@@ -20,7 +20,7 @@ Celeste 64:
   friendsanity: 'true'
   signsanity: 'true'
   carsanity: 'true'
-  start_location_hints: Badeline Cassette Strawberry
+  start_location_hints: Badeline Island Cassette Strawberry
   strawberries_required_percentage: random-range-high-50-100
 
 ---

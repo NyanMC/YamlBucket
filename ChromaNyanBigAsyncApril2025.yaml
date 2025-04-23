@@ -1,0 +1,90 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: The Big Async April 2025
+# Games: DLCQuest, A Hat in Time, Celeste 64
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+DLCQuest:
+  campaign: both
+  item_shuffle: random
+  coinsanity: coin
+  permanent_coins: 'true'
+  coinbundlequantity:
+    5: 1
+    10: 1
+    15: 1
+    20: 1
+  progression_balancing: 0
+  start_inventory: # start with qol items to prevent having to restart campaign 1 multiple times
+    Pause Menu Pack: 1
+    Night Map Pack: 1
+
+---
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+A Hat in Time:
+  progression_balancing: 0
+  EndGoal:
+    finale: 2
+    rush_hour: 1
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  MinPonCost: 50
+  MaxPonCost: 150
+  BadgeSellerMinItems: 10
+  BadgeSellerMaxItems: 10
+  ActRandomizer:
+    light: 1
+    insanity: 1
+  StartingChapter: # starting in chapter 3 or 4 sucks so let's maybe not
+    '1': 1
+    '2': 1
+  LowestChapterCost: 5
+  HighestChapterCost: 45
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 6
+  FinalChapterMinCost: 50
+  FinalChapterMaxCost: 50
+  FinaleShuffle: 'true'
+  RandomizeHatOrder: 'true'
+  YarnAvailable: 50
+  YarnCostMin: random-high
+  YarnCostMax: 12
+  HatItems:
+    'false': 9
+    'true': 1
+  UmbrellaLogic: random
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityCheckCount: random-range-1-20 # at worst a little harder than vanilla, most likely easier
+  EnableDLC2: 'true'
+  MetroMinPonCost: 10
+  MetroMaxPonCost: 100
+  NyakuzaThugMinShopItems: 3
+  NyakuzaThugMaxShopItems: 5
+  BaseballBat: random
+  EnableDeathWish: 'true'
+  DWTimePieceRequirement: random-high
+  exclude_locations: # i hate QVM and would like to be able to use the skip
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  progression_balancing: 0
+  move_shuffle: 'true'
+  total_strawberries: 55 # won't actually be 55, but this ensures there will be NO raspberries
+  strawberries_required_percentage: random-high
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: random
+  madeline_two_dash_hair_color: random
+  madeline_no_dash_hair_color: random
+  madeline_feather_hair_color: random
+  badeline_chaser_frequency: 10

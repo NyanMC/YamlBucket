@@ -1,0 +1,24 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: I love Dopamine!
+# Games: Warehouse, Warehouse Secure Mod, Clique XXL
+# ! Bringing this to a normal async is an awful idea !
+
+name: ChromaWarehouse{number}
+game: Manual_Warehouse_Alexander230
+Manual_Warehouse_Alexander230:
+  progression_balancing: 0
+
+---
+
+name: ChromaWarehouse{number}
+game: Manual_WarehouseSecure_ChromaNyan
+Manual_WarehouseSecure_ChromaNyan:
+  progression_balancing: 0
+
+---
+
+name: ChromaCliqueXXL{NUMBER}
+game: Manual_CliqueXXL_ChromaNyan
+Manual_CliqueXXL_ChromaNyan:
+  progression_balancing: 0
+  goal: satisfaction hunt

@@ -1,0 +1,112 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Play Free Games! Or Else.
+# Games: Air Delivery, Autopelago, Bumper Stickers, Candy Box 2, Celeste 64, ChecksFinder, Clique, Jigsaw, MetroCUBEvania, Yacht Dice
+
+name: ChromaDelivery{NUMBER}
+game: Air Delivery
+Air Delivery:
+  progression_balancing: 0
+
+---
+
+name: ChromaRat{NUMBER}
+game: Autopelago
+Autopelago:
+  progression_balancing: 0
+  fill_with_determination: random
+  start_inventory:
+    Sandwich that is Literally One Mile Tall: 1
+
+---
+
+name: ChromaBumper{NUMBER}
+game: Bumper Stickers
+Bumper Stickers:
+  progression_balancing: 0
+  task_advances: 5
+  turners: 5
+  paint_cans: 5
+  local_items: Score Bonus
+
+---
+
+name: ChromaCandy{NUMBER}
+game: Candy Box 2
+Candy Box 2:
+  progression_balancing: 0
+  quest_randomisation: everything
+  teapot_hp: 1000
+  energy_link: 'true'
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  progression_balancing: 0
+  total_strawberries: 15
+  strawberries_required_percentage: 100
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: baddy
+  madeline_two_dash_hair_color: FF00FF
+  madeline_no_dash_hair_color: grey
+  badeline_chaser_source: strawberries
+  badeline_chaser_frequency: 3
+  local_items: Strawberry
+  exclude_locations: Badeline Island Cassette Strawberry
+
+---
+
+name: ChromaChecks{NUMBER}
+game: ChecksFinder
+ChecksFinder: {}
+
+---
+
+name: ChromaClique{NUMBER}
+game: Clique
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+Jigsaw:
+  progression_balancing: 0
+  number_of_pieces: 250
+  maximum_number_of_checks: 250
+  number_of_checks_out_of_logic: 10
+
+---
+
+name: ChromaCUBE{NUMBER}
+game: MetroCUBEvania
+MetroCUBEvania:
+  progression_balancing: 0
+  extra_checks: 'true'
+  extra_checkpoint: 'true'
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: 0
+  number_of_dice_fragments_per_dice: '5'
+  number_of_roll_fragments_per_roll: '5'
+  score_for_goal: random
+  minimal_number_of_dice_and_rolls: random
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_step_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: random

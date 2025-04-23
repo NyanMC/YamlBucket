@@ -1,0 +1,50 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: wheeeeeeeee
+# Games: Celeste 64, Undertale Beta
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+Celeste 64:
+  progression_balancing: disabled
+  move_shuffle: 'true'
+  total_strawberries: 55 # won't actually generate with 55
+  strawberries_required_percentage: random-high
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: baddy
+  madeline_two_dash_hair_color: FF00FF
+  madeline_no_dash_hair_color: grey
+  madeline_feather_hair_color: golden
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+Undertale:
+  progression_balancing: disabled
+  route_required: # talk, or should i fight
+    pacifist: 5
+    genocide: 5
+    all_routes: 2 # 1 in 6 chance to suffer
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  rando_love: 'true'
+  spare_sanity: 'true'
+  spare_sanity_max: 20
+  spare_sanity_pack_size: 4
+  kill_sanity: 'true'
+  kill_sanity_pack_size: 4
+  ice_traps: 10
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  gifting: 'true'
