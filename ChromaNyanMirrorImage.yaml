@@ -1,0 +1,182 @@
+﻿# https://www.chromanyan.page/yamlheader | redaehlmay/egap.naynamorhc.www//:sptth
+# Multiworld: Mirror Image               |               egamI rorriM :dlrowitluM
+# Games: A Hat in Time                   |                   emiT ni taH A :semaG
+# The mirror is also included in this version of the yaml, so that both generate simultaneously.
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: random-low
+  accessibility: full
+  death_link: 'false'
+  EndGoal:
+    finale: 0
+    rush_hour: 1
+  ShuffleStorybookPages: 'true'
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  ShuffleActContracts: 'false'
+  MinPonCost: 50
+  MaxPonCost: 300
+  BadgeSellerMinItems: 4
+  BadgeSellerMaxItems: 6
+  LogicDifficulty: # warning: mirroring this to expert may create a difficult world
+    normal: 1
+    moderate: 0
+    hard: 0
+    expert: 0
+  NoPaintingSkips:
+    'false': 50
+    'true': 0
+  CTRLogic:
+    time_stop_only: 1
+    scooter: 0
+    sprint: 0
+    nothing: 0
+  ActRandomizer:
+    'false': 0
+    light: 1
+    insanity: 0
+  StartingChapter:
+    '1': 1
+    '2': 1
+    '3': 0
+    '4': 0
+  LowestChapterCost: 3
+  HighestChapterCost: 30
+  ChapterCostIncrement: 2
+  ChapterCostMinDifference: 1
+  FinalChapterMinCost: 20
+  FinalChapterMaxCost: 40
+  FinaleShuffle: 'true'
+  StartWithCompassBadge: 'true'
+  CompassBadgeMode: closest
+  RandomizeHatOrder:
+    'false': 1
+    'true': 0
+    time_stop_last: 0
+  YarnAvailable: 50
+  YarnCostMin: 6
+  YarnCostMax: 10
+  MinExtraYarn: 15
+  HatItems: 'true'
+  UmbrellaLogic: 'true'
+  MaxExtraTimePieces: 16
+  YarnBalancePercent: 20
+  TimePieceBalancePercent: 35
+  EnableDLC1: 'true'
+  Tasksanity: 'false'
+  TasksanityTaskStep: 3 # this should mirror to 1. i'm cruel but i'm not *that* cruel
+  TasksanityCheckCount: 1
+  ShipShapeCustomTaskGoal: 10 # if i understand correctly this should mirror to 80. okay maybe i am that cruel
+  ExcludeTour: 'false'
+  EnableDLC2: 'true'
+  MetroMinPonCost: 50
+  MetroMaxPonCost: 200
+  NyakuzaThugMinShopItems: 2
+  NyakuzaThugMaxShopItems: 4
+  BaseballBat: 'true'
+  NoTicketSkips:
+    'false': 1
+    'true': 0
+    rush_hour: 0
+  EnableDeathWish: 'false' # because death wish is false, and options that control which dlcs are enabled won't be mirrored, all death wish options are removed from the yaml
+  TrapChance: 10
+  BabyTrapWeight: 40
+  LaserTrapWeight: 40
+  ParadeTrapWeight: 20
+  exclude_locations: # i hate QVM and would like to be able to use the skip. the mirror won't be so lucky
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+
+---
+
+name: taHamorhC{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: random-high
+  accessibility: full
+  death_link: 'true'
+  EndGoal:
+    finale: 1
+    rush_hour: 0
+  ShuffleStorybookPages: 'false'
+  ShuffleAlpineZiplines: 'false'
+  ShuffleSubconPaintings: 'false'
+  ShuffleActContracts: 'true'
+  MinPonCost: 750
+  MaxPonCost: 500
+  BadgeSellerMinItems: 6
+  BadgeSellerMaxItems: 4
+  LogicDifficulty: # warning: mirroring this to expert may create a difficult world
+    normal: 1
+    moderate: 0
+    hard: 0
+    expert: 0
+  NoPaintingSkips:
+    'false': 0
+    'true': 50
+  CTRLogic:
+    time_stop_only: 0
+    scooter: 0
+    sprint: 0
+    nothing: 1
+  ActRandomizer:
+    'false': 1
+    light: 0
+    insanity: 0
+  StartingChapter:
+    '1': 0
+    '2': 0
+    '3': 1
+    '4': 1
+  LowestChapterCost: 7
+  HighestChapterCost: 30
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 8
+  FinalChapterMinCost: 40
+  FinalChapterMaxCost: 20
+  FinaleShuffle: 'false'
+  StartWithCompassBadge: 'false'
+  CompassBadgeMode: 
+    important_first: 1
+    important_only: 1
+  RandomizeHatOrder:
+    'false': 0
+    'true': 1
+    time_stop_last: 0
+  YarnAvailable: 60
+  YarnCostMin: 7
+  YarnCostMax: 3
+  MinExtraYarn: 5
+  HatItems: 'false'
+  UmbrellaLogic: 'false'
+  MaxExtraTimePieces: 0
+  YarnBalancePercent: 80
+  TimePieceBalancePercent: 65
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityTaskStep: 1 # this should mirror to 1. i'm cruel but i'm not *that* cruel
+  TasksanityCheckCount: 30
+  ShipShapeCustomTaskGoal: 80 # if i understand correctly this should mirror to 80. okay maybe i am that cruel
+  ExcludeTour: 'true'
+  EnableDLC2: 'true'
+  MetroMinPonCost: 750
+  MetroMaxPonCost: 600
+  NyakuzaThugMinShopItems: 4
+  NyakuzaThugMaxShopItems: 2
+  BaseballBat: 'false'
+  NoTicketSkips:
+    'false': 0
+    'true': 1
+    rush_hour: 0
+  EnableDeathWish: 'false' # because death wish is false, and options that control which dlcs are enabled won't be mirrored, all death wish options are removed from the yaml
+  TrapChance: 90
+  BabyTrapWeight: 60
+  LaserTrapWeight: 60
+  ParadeTrapWeight: 80
+  priority_locations: # i hate QVM and would like to be able to use the skip. the mirror won't be so lucky
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest

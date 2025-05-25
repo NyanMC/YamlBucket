@@ -1,0 +1,27 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Digipelago 4 (Benny Edition) - Hintapalooza
+# Games: Tetris Attack, Wario Land 4
+
+name: ChromaAttack{NUMBER}
+description: When's the last time YOU had a Tetris Attack?
+game: Tetris Attack
+
+Tetris Attack:
+  progression_balancing: random-low
+  puzzle_goal: no_puzzle
+  death_link: 'true' # i mean, "tetris attack" does kind of sound like heart attack
+  special_stage_trap_count: 5
+  special_stage_hp_multiplier: 3
+
+---
+
+name: ChromaLand4{NUMBER}
+game: Wario Land 4
+
+Wario Land 4:
+  progression_balancing: random-low
+  death_link: 'true'
+  portal: open
+  pool_jewels: 4
+  diamond_shuffle: 'true'
+  smash_through_hard_blocks: 'true'

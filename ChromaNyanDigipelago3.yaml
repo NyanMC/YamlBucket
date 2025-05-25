@@ -1,0 +1,19 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: digipelago 3: Hint Snowball
+# Games: Mega Man X2
+# Energylink Enabled
+
+name: ChromaMMX2{NUMBER}
+game: Mega Man X2
+
+Mega Man X2:
+  progression_balancing: random-low
+  pickupsanity: 'true'
+  starting_life_count: 99
+  jammed_buster: 'true'
+  shoryuken_in_pool: 'false'
+  logic_helmet_checkpoints: 'true'
+  boss_weakness_rando: shuffled
+  boss_weakness_strictness: weakness_and_buster
+  base_open: ['Medals', 'Armor Upgrades', 'Heart Tanks']
+  base_boss_rematch_count: random-high

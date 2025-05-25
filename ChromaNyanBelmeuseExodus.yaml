@@ -1,0 +1,14 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Belmeuse Exodus
+# Games: Minecraft Dig, ChecksFinder
+
+name: ChromaDig{NUMBER}
+description: this may be the last time i play minecraft dig in an async
+game: Minecraft Dig
+Minecraft Dig: {}
+
+---
+
+name: ChromaChecks{NUMBER}
+game: ChecksFinder
+ChecksFinder: {}

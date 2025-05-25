@@ -1,0 +1,126 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Just a Ninth Async
+# Games: Undertale Beta, Jigsaw, Yacht Dice Beta x3
+
+name: ChromaTale{NUMBER}
+game: Undertale
+Undertale:
+  progression_balancing: random-low
+  route_required: all_routes
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+  guaranteed_filler: 20
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  rando_love: 'true'
+  rando_stats: 'true'
+  spare_sanity: 'true'
+  spare_sanity_max: 20
+  spare_sanity_pack_size: 4
+  kill_sanity: 'true'
+  kill_sanity_pack_size: 4
+  ice_traps: 10
+  prog_armor: 'true'
+  prog_weapons: 'true'
+
+---
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+Jigsaw:
+  progression_balancing: random-low
+  number_of_pieces: 500
+  percentage_of_extra_pieces: 25
+  maximum_number_of_real_items: 100
+  minimum_number_of_pieces_per_real_item: 5
+  permillage_of_checks_out_of_logic: 50
+  which_image: 34
+  piece_order_type: four_parts
+  fake_pieces: 0
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: random-low
+  game_difficulty:
+    easy: 2
+    medium: 2
+    hard: 2
+    extreme: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  total_number_of_categories: 16
+  percentage_alternative_categories: random
+  allowed_starting_categories: ['Category Choice', 'Category Double Threes and Fours', 'Category Inverse Choice', 'Category Quadruple Ones and Twos', 'Category Sixes', 'Category Sum of Evens']
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: random-low
+  game_difficulty:
+    easy: 2
+    medium: 2
+    hard: 2
+    extreme: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  total_number_of_categories: 16
+  percentage_alternative_categories: random
+  allowed_starting_categories: ['Category Choice', 'Category Double Threes and Fours', 'Category Inverse Choice', 'Category Quadruple Ones and Twos', 'Category Sixes', 'Category Sum of Evens']
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+Yacht Dice:
+  progression_balancing: random-low
+  game_difficulty:
+    easy: 2
+    medium: 2
+    hard: 2
+    extreme: 1
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls: random
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  total_number_of_categories: 16
+  percentage_alternative_categories: random
+  allowed_starting_categories: ['Category Choice', 'Category Double Threes and Fours', 'Category Inverse Choice', 'Category Quadruple Ones and Twos', 'Category Sixes', 'Category Sum of Evens']
+  number_of_starting_categories: random-range-1-4
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  add_bonus_points: sure

@@ -82,6 +82,7 @@ Jigsaw:
   number_of_pieces: 250
   maximum_number_of_checks: 250
   number_of_checks_out_of_logic: 10
+  fake_pieces: 0
 
 ---
 

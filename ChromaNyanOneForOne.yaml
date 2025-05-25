@@ -14,6 +14,7 @@ Jigsaw:
   piece_order: every_piece_fits # that way it really is 1:1
   strictness_piece_order: 100
   number_of_checks_out_of_logic: 10
+  fake_pieces: 0
 
 ---
 
