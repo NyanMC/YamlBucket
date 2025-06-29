@@ -1,0 +1,18 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Pride Month Async
+# Games: DOOM 1993
+# This yaml has two parts. This is the second part.
+
+name: CHROMADOOM93{NUMBER}
+description: pride month may be over, that just means it's time for wrath month
+game: DOOM 1993
+
+DOOM 1993:
+  progression_balancing: random-low
+  goal: complete_boss_levels
+  difficulty: medium
+  random_monsters: shuffle
+  random_pickups: random_balanced
+  start_with_computer_area_maps: 'true'
+  reset_level_on_death: 'false'
+  backpack_count: 3

@@ -1,0 +1,90 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworlds: Puppy Hunt
+# Games: Clique x3, Here Comes Niko!, Celeste 64
+# So, funny story. This yaml was originally intended for the Pride Month Async, but the host of that (Elire, Astra, Vei) was also running a sync.
+# When generating, my yaml for Pride Month Async was included on accident. She did not notice until after the world had generated.
+# Other people took the Cliques and Celeste 64, and she was just going to release the Niko, but I saw this as a perfect opportunity to play a sync.
+# It was a good time. Well, besides my max elevator cost rolling 79.
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: white
+  hard_mode: 'true'
+
+---
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: random-low
+  death_link: 'true'
+  trap_link: 'true'
+  min_kiosk_cost: 0
+  max_kiosk_cost: 70
+  min_elevator_cost: 60
+  max_elevator_cost: 79
+  cassette_logic: level_based
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: 'true'
+  bonk_permit: 'true'
+  soda_cans: 'true'
+  parasols: 'true'
+  swimming: 'true'
+  textbox: 'true'
+  ac_repair: 'true'
+  fishsanity: insanity
+  seedsanity: insanity
+  flowersanity: insanity
+  bonesanity: insanity
+  # originally i was going to do all 3 big sanities, but i changed my mind
+  chatsanity: global
+  thoughtsanity: 'true'
+  trapchance: 30
+  myturn_trapweight: 5
+  home_trapweight: 0
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+
+Celeste 64:
+  progression_balancing: random-low
+  death_link: 'true' # i'm funny
+  death_link_amnesty: 10
+  move_shuffle: 'true'
+  total_strawberries: 55
+  strawberries_required_percentage: random-high
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: any_color
+  madeline_two_dash_hair_color: any_color
+  madeline_no_dash_hair_color: any_color
+  madeline_feather_hair_color: any_color

@@ -1,0 +1,72 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Flint's Bimonthly Async: Lucky #7
+# Games: Here Comes Niko!, Undertale Beta
+
+name: ChromaNiko{NUMBER}
+description: Coming straight from YOUR house...
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  level_based_keys: random
+  cassette_logic: scattered
+  bonk_permit: 'true'
+  bug_catching: 'true'
+  soda_cans: 'true'
+  parasols: 'true'
+  swimming: 'true'
+  textbox: 'true'
+  ac_repair: 'true'
+  applebasket: 'false'
+
+  # randomly enable any of the smaller sanities
+  fishsanity:
+    vanilla: 1
+    location: 1
+  seedsanity:
+    vanilla: 1
+    location: 1
+  flowersanity:
+    vanilla: 1
+    location: 1
+  bonesanity:
+    vanilla: 1
+    location: 1
+
+  applesanity: 'false' # don't worry, i'm not insane. no applesanity, no bugsanity, no chatsanity. i don't want to bring a thousand locations to a two week async
+  bugsanity: 'false'
+  chatsanity: 'vanilla'
+  thoughtsanity: 'true' # i will do thoughtsanity though. it's only like 30 locations
+  goal_completion: hired
+  min_kiosk_cost: 10
+  max_kiosk_cost: 50
+  min_elevator_cost: 50
+  max_elevator_cost: 50
+  trap_link: 'true'
+
+---
+
+name: ChromaTale{NUMBER}
+description: BECOME STRONGER
+game: Undertale
+
+Undertale:
+  progression_balancing: random-low
+  route_required: genocide
+  starting_area:
+    ruins: 1
+    snowdin: 1
+    waterfall: 1
+    hotland: 1
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 2
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  rando_love: 'true'
+  kill_sanity: 'true' # adds about 100 locations to the game. i mostly do this just so i don't immediately get forced into an undyne fight if i get unlucky
+  kill_sanity_pack_size: 5
+  temy_include: 'true'
+  prog_armor: 'false'
+  prog_weapons: 'false'

@@ -1,0 +1,9 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Digipelago 5 - "I Got Time" edition
+# Games: Checkscavator
+
+name: ChromaDig{NUMBER}
+game: Manual_Checkscavator_ChromaNyan
+
+Manual_Checkscavator_ChromaNyan:
+  progression_balancing: random-low

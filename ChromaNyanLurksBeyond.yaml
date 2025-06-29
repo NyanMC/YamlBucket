@@ -1,0 +1,134 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Something Lurks Beyond
+# Games: A Hat in Time, Undertale Beta, Mega Man 2
+# Custom Goals:
+#   ChromaHat:
+#     Complete the "Boss Rush" death wish contract. Death Wish unlocks after receiving 35 Time Pieces.
+#     Boss Rush is the only contract in the shuffle, other than Seal the Deal, which is always last when it is the goal. Seal the Deal does not have to be completed.
+#   ChromaTale: 
+#     Defeat Toriel, Papyrus, Undyne, and Mettaton, then defeat each route's final boss(es).
+#     Toriel, Papyrus, and Mettaton should be spared in pacifist, while Undyne should be killed in genocide. Doing otherwise would be too easy.
+#     They can be defeated in the other route first, but this does not count toward the goal until defeated in the listed route, even if doing otherwise still awards the key piece.
+#     Plando is used to enforce this to the best of my ability, by putting key pieces on every boss' location.
+#     After this is completed, Asgore, Omega Flowey, Sans, and Asriel Dreemurr must all be defeated to goal, identical to vanilla.
+#   ChromaMM2:
+#     Defeat EVERY boss. This means every robot master in their original stage, all wily stage bosses, and all rematches. After all of that is done, defeat Alien in Wily 6.
+#     In other words, check every location.
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+A Hat in Time:
+  progression_balancing: random-low
+  EndGoal: seal_the_deal # except it's not. i'll complete my custom goal before i have to seal the deal
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  BadgeSellerMinItems: 1
+  BadgeSellerMaxItems: 4
+  ActRandomizer: light
+  StartingChapter: 1
+  LowestChapterCost: 5
+  HighestChapterCost: 30
+  ChapterCostIncrement: 5
+  ChapterCostMinDifference: 5
+  FinalChapterMinCost: 35
+  FinalChapterMaxCost: 35
+  FinaleShuffle: 'true'
+  YarnCostMin: 6
+  YarnCostMax: 12
+  MinExtraYarn: 10
+  UmbrellaLogic: 'true'
+  MaxExtraTimePieces: 0
+  YarnBalancePercent: 30
+  TimePieceBalancePercent: 35
+  EnableDLC1: 'true'
+  ShipShapeCustomTaskGoal: 1
+  EnableDLC2: 'true'
+  NyakuzaThugMinShopItems: 1
+  NyakuzaThugMaxShopItems: 1
+  EnableDeathWish: 'true'
+  DWTimePieceRequirement: 35
+  DWShuffle: 'true'
+  DWExcludeAnnoyingContracts: 'false' # boss rush is in this list. we will have to exclude them ourselves
+  DWExcludeCandles: 'true'
+  exclude_locations:
+    # just because i don't like them
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+    # add every contract, except boss rush and candles, to the excluded list.
+    # we don't have to exclude candles because we're using the yaml option that excludes them, we do have to manually exclude most annoying contracts though since boss rush is in that list
+    - 10 Seconds until Self-Destruct - Main Objective
+    - Beat the Heat - Main Objective
+    - Bird Sanctuary - Main Objective
+    - Breaching the Contract - Main Objective
+    - Collect-a-thon - Main Objective
+    # locations with a colon in them break yaml syntax and have to be quoted
+    - "Community Rift: Rhythm Jump Studio - Main Objective"
+    - "Community Rift: The Mountain Rift - Main Objective"
+    - "Community Rift: Twilight Travels - Main Objective"
+    - "Cruisin' for a Bruisin' - Main Objective"
+    - Encore! Encore! - Main Objective
+    - Killing Two Birds - Main Objective
+    - Mafia's Jumps - Main Objective
+    - No More Bad Guys - Main Objective
+    - Quality Time with Snatcher - Main Objective
+    - "Rift Collapse: Alpine Skyline - Main Objective"
+    - "Rift Collapse: Dead Bird Studio - Main Objective"
+    - "Rift Collapse: Deep Sea - Main Objective"
+    - "Rift Collapse: Mafia of Cooks - Main Objective"
+    - "Rift Collapse: Sleepy Subcon - Main Objective"
+    - Seal the Deal - Main Objective
+    - Security Breach - Main Objective
+    - She Speedran from Outer Space - Main Objective
+    - So You're Back From Outer Space - Main Objective
+    - Speedrun Well - Main Objective
+    - The Great Big Hootenanny - Main Objective
+    - The Illness has Speedrun - Main Objective
+    - The Mustache Gauntlet - Main Objective
+    - Vault Codes in the Wind - Main Objective
+    - Wound-Up Windmill - Main Objective
+    - Zero Jumps - Main Objective
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+requires:
+  plando: items
+
+Undertale:
+  progression_balancing: random-low
+  route_required: all_routes
+  starting_area: ruins
+  key_hunt: 'true'
+  key_pieces: 4
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  prog_armor: 'true'
+  prog_weapons: 'true'
+  plando_items:
+    - items:
+        Key Piece: 4
+      locations:
+        - Toriel Fight
+        - Papyrus Fight
+        - Undyne Fight
+        - Mettaton Fight
+      from_pool: true
+      world: false
+      force: true
+
+---
+
+name: ChromaMM2{NUMBER}
+game: Mega Man 2
+
+Mega Man 2:
+  progression_balancing: random-low
+  energy_link: 'true'
+  starting_robot_master: random
+  consumables: none
+  enemy_weakness: 'true'
+  strict_weakness: 'true'
+  random_weakness: randomized
+  wily_5_requirement: 8
+  palette_shuffle: "Mega Buster-$35;randomized"

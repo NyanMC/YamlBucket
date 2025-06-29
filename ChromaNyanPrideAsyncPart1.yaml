@@ -1,0 +1,71 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Pride Month Async
+# Games: Clique x3, Jigsaw, Celeste 64
+# This yaml has two parts. This is the first part.
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: white
+  hard_mode: 'true'
+
+---
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+# This jigsaw is intended to be used with the following image:
+# https://i.imgur.com/ky75RFo.png
+Jigsaw:
+  progression_balancing: random-low
+  number_of_pieces: 250
+  percentage_of_extra_pieces: 20
+  number_of_piece_bundles: 60
+  minimum_number_of_pieces_per_bundle: 5
+  add_fillers: 'false'
+  checks_out_of_logic: 5
+  piece_order: every_piece_fits
+  strictness_piece_order: 90
+
+---
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+
+Celeste 64:
+  progression_balancing: random-low
+  death_link: 'true' # i'm funny
+  death_link_amnesty: 10
+  move_shuffle: 'true'
+  total_strawberries: 55
+  strawberries_required_percentage: random-high
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+  madeline_one_dash_hair_color: any_color
+  madeline_two_dash_hair_color: any_color
+  madeline_no_dash_hair_color: any_color
+  madeline_feather_hair_color: any_color
