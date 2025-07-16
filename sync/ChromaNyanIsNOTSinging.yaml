@@ -1,0 +1,9 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: I guess we singing now
+# Games: Minecraft Dig
+
+name: ChromaDig{NUMBER}
+game: Minecraft Dig
+
+# yes, really
+Minecraft Dig: {}

@@ -1,0 +1,84 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Deus Ignis
+# Games: Clique x5, Jigsaw, Undertale Beta
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+Jigsaw:
+  progression_balancing: 30
+  number_of_pieces: 225
+  orientation_of_image: square
+  add_fillers: 'false'
+  checks_out_of_logic: 5
+  piece_order_type: corners_edges_normal
+  piece_order: every_piece_fits
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+
+Undertale:
+  progression_balancing: 40
+  route_required: genocide
+  guaranteed_filler: 20
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 5
+  rando_item_button: 'true'
+  rando_jump: 'true'
+  rando_love: 'true'
+  kill_sanity: 'true'
+  kill_sanity_pack_size: 5
+  ice_traps: 10
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: white
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'

@@ -1,0 +1,130 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworlds: Puppy Hunt
+# Games: A Hat in Time, Jigsaw, Clique x5
+
+name: ChromaHat{NUMBER}
+description: PECK
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: 30
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  UmbrellaLogic: 'true'
+  TrapChance: 15
+  EndGoal: rush_hour
+
+  # starting in chapter 3 or 4 sucks with act randomization, so like...don't
+  StartingChapter:
+    '1': 1
+    '2': 1
+
+  # the item pool SHOULD have 50 time pieces, and this is a 6 hour sync, so make costs higher
+  LowestChapterCost: 5
+  HighestChapterCost: 40
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 6
+  FinalChapterMinCost: 45
+  FinalChapterMaxCost: 45
+
+  # make hats cost more yarn. this time, time stop won't be last
+  YarnAvailable: 80
+  YarnCostMin: 12
+  YarnCostMax: 12
+
+  YarnBalancePercent: 30
+  TimePieceBalancePercent: 35
+
+  # DLC2, but not DLC1. DLC1 has a bunch of time consuming levels, but DLC2 should be fine as long as i tone down the shops
+  EnableDLC1: 'false'
+  EnableDLC2: 'true'
+  MetroMinPonCost: 25
+  MetroMaxPonCost: 150
+  NyakuzaThugMinShopItems: 1
+  NyakuzaThugMaxShopItems: 1
+  BaseballBat: random
+
+  # a little death wish, as a treat. i promise i won't hold up the whole room from a skill issue
+  EnableDeathWish: 'true'
+  DWTimePieceRequirement: random-high
+  DWShuffle: 'true'
+  DWShuffleCountMin: 5
+  DWShuffleCountMax: 5
+  DWExcludeCandles: 'false' # none of these are THAT bad with bonuses off
+
+  exclude_locations:
+    # allow doing the QVM skip
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+    # i suck at these. get rid of them as a possibility
+    - Encore! Encore! - Main Objective
+    - Killing Two Birds - Main Objective
+    - Breaching the Contract - Main Objective
+    - The Illness has Speedrun - Main Objective
+    - No More Bad Guys - Main Objective
+
+---
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+Jigsaw:
+  progression_balancing: 20
+  number_of_pieces: 250
+  which_image: 29
+  percentage_of_extra_pieces: 10
+  minimum_number_of_pieces_per_bundle: 3
+  add_fillers: 'false'
+  checks_out_of_logic: 10
+  piece_order_type: four_parts
+  piece_order: random_order
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: random
+  hard_mode: 'true'

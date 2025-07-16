@@ -1,0 +1,86 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Everyone else is hosting syncs so I will too but I don't want to host today so it's tomorrow instead
+# Games: A Hat in Time, Yacht Dice, Clique
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  UmbrellaLogic: 'true'
+  TrapChance: 15
+  EndGoal:
+    finale: 1
+    rush_hour: 1
+
+  # starting in chapter 3 or 4 sucks with act randomization, so like...don't
+  StartingChapter:
+    '1': 1
+    '2': 1
+  
+  # the item pool SHOULD have 50 time pieces, so make costs a little higher
+  HighestChapterCost: 35
+  FinalChapterMinCost: 35
+  FinalChapterMaxCost: 40
+
+  # make hats cost more yarn, but make time stop the last hat to compensate
+  RandomizeHatOrder: time_stop_last
+  YarnCostMin: 6
+  YarnCostMax: 8
+
+  # DLC2, but not DLC1. DLC1 has a bunch of time consuming levels, but DLC2 should be fine as long as i tone down the shops
+  EnableDLC2: 'true'
+  MetroMinPonCost: 25
+  MetroMaxPonCost: 150
+  NyakuzaThugMinShopItems: 1
+  NyakuzaThugMaxShopItems: 1
+  BaseballBat: 'true'
+
+  # a little death wish, as a treat. i promise i won't hold up the whole room from a skill issue
+  EnableDeathWish: 'true'
+  DWTimePieceRequirement: random-high
+  DWShuffle: 'true'
+  DWShuffleCountMin: 5
+  DWShuffleCountMax: 5
+  DWExcludeCandles: 'false' # none of these are THAT bad with bonuses off
+
+  exclude_locations:
+    # allow doing the QVM skip
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+    # i suck at these. get rid of them as a possibility
+    - Encore! Encore! - Main Objective
+    - Killing Two Birds - Main Objective
+    - Breaching the Contract - Main Objective
+    - The Illness has Speedrun - Main Objective
+    - No More Bad Guys - Main Objective
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+
+Yacht Dice:
+  number_of_dice_fragments_per_dice: '5'
+  number_of_roll_fragments_per_roll: '5'
+  points_size: mix
+  # in the game about gambling, i'm going to gamble on many of my settings
+  score_for_goal: random
+  minimal_number_of_dice_and_rolls: random
+  alternative_categories: random
+  weight_of_dice: random
+  weight_of_roll: random
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+
+---
+
+name: ChromaClique{NUMBER}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'

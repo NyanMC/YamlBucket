@@ -1,0 +1,39 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: [REACTOR: ONLINE]
+# Games: Jigsaw, Tetris Attack
+
+name: ChromaJigsaw{NUMBER}
+description: my honest reactor
+game: Jigsaw
+
+# This jigsaw is intended to be used with the following image:
+# https://i.imgur.com/MwKOs2u.png
+Jigsaw:
+  progression_balancing: 30
+  number_of_pieces: 100
+  orientation_of_image: portrait
+  percentage_of_extra_pieces: 10
+  minimum_number_of_pieces_per_bundle: 1
+  add_fillers: 'false'
+  checks_out_of_logic: 5
+  piece_order: every_piece_fits
+  strictness_piece_order: 90
+
+---
+
+name: ChromaAttack{NUMBER}
+game: Tetris Attack
+
+Tetris Attack:
+  progression_balancing: 40
+  starter_pack: stage_clear_round_1
+  stage_clear_goal: 'true'
+  puzzle_goal: no_puzzle
+  versus_goal: normal
+  puzzle_inclusion: no_puzzle
+  versus_inclusion: 'true'
+  stage_clear_mode: skippable
+  special_stage_trap_count: 3
+  special_stage_hp_multiplier: random-range-1-6
+  last_stage_hp_multiplier: random-range-1-6
+  versus_mode: goal_progressive

@@ -1,0 +1,72 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: I love more Dopamine!
+# Games: DLCQuest, Here Comes Niko!, Jigsaw
+# Traplink Enabled for Here Comes Niko!
+# !!! WARNING: Coinsanity 1 DLCQuest !!!
+# !!! WARNING: Allsanity Niko        !!!
+# !!! WARNING: 2000 Piece Jigsaw     !!!
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+
+DLCQuest:
+  campaign: both
+  item_shuffle: shuffled
+  coinsanity: coin
+  permanent_coins: 'true'
+  coinbundlequantity: 1
+  progression_balancing: random-low
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1
+
+---
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: random-low
+  trap_link: 'true'
+  min_kiosk_cost: 0
+  max_kiosk_cost: 70
+  min_elevator_cost: 50
+  max_elevator_cost: 75
+  enable_achievements: all_achievements
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  snail_shop: 'true'
+  level_based_keys: 'true'
+  bonk_permit: 'true'
+  bug_catching: 'true'
+  soda_cans: 'true'
+  parasols: 'true'
+  swimming: 'true'
+  textbox: 'true'
+  ac_repair: 'true'
+  applebasket: 'true'
+  fishsanity: insanity
+  seedsanity: insanity
+  flowersanity: insanity
+  bonesanity: insanity
+  applesanity: 'true'
+  bugsanity: 'true'
+  chatsanity: level_based
+  thoughtsanity: 'true'
+
+---
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+# This jigsaw is intended to be used with the following image:
+# https://ahatintime.wiki.gg/images/thumb/b/b9/Nyakuza_Metro_Titlecard.png/1920px-Nyakuza_Metro_Titlecard.png?1e76f6
+Jigsaw:
+  progression_balancing: random-low
+  number_of_pieces: 2000
+  percentage_of_extra_pieces: 100
+  number_of_piece_bundles: 2000
+  add_fillers: 'false'
+  checks_out_of_logic: 50
+  piece_order_type: four_parts_non_rotated
+  piece_order: every_piece_fits

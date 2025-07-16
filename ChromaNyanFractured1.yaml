@@ -1,0 +1,35 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Fractured (Microworlds-ish)
+# Games: DOOM 1993 (episode 1), DLCQuest (basic campaign)
+# There are three separate yamls.
+
+name: CHROMADOOM{NUMBER}
+game: DOOM 1993
+
+DOOM 1993:
+  progression_balancing: random-low
+  goal: complete_all_levels
+  random_pickups: random_balanced
+  start_with_computer_area_maps: 'true'
+  reset_level_on_death: 'false'
+  episode1: 'true'
+  episode2: 'false'
+  episode3: 'false'
+  split_backpack: 'true'
+  backpack_count: 3
+
+---
+
+name: ChromaDLCQ{NUMBER}
+game: DLCQuest
+
+DLCQuest:
+  campaign: basic
+  item_shuffle: shuffled
+  coinsanity: coin
+  permanent_coins: 'true'
+  coinbundlequantity: 20
+  progression_balancing: random-low
+  start_inventory:
+    Pause Menu Pack: 1
+    Night Map Pack: 1

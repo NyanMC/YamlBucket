@@ -1,0 +1,82 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Recruit Roundup
+# Games: A Hat in Time, Super Mario 64, Tetris Attack, Yacht Dice Beta
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: random-low
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  LowestChapterCost: 6
+  HighestChapterCost: 30
+  ChapterCostIncrement: 6
+  ChapterCostMinDifference: 6
+  FinalChapterMinCost: 35
+  FinalChapterMaxCost: 40
+  RandomizeHatOrder: time_stop_last
+  YarnAvailable: 60
+  YarnCostMin: 6
+  YarnCostMax: 10
+  UmbrellaLogic: 'true'
+  EnableDLC1: 'true' # i want to do something funny that needs DLC1
+  Tasksanity: 'true'
+  TasksanityCheckCount: 30 # not quite cruisin' for a bruisin', but definitely harder than normal
+  ExcludeTour: 'true'
+  EnableDLC2: 'false' # honestly don't feel like it
+
+---
+
+name: ChromaSM64{NUMBER}
+game: Super Mario 64
+
+Super Mario 64:
+  progression_balancing: random-low
+  area_rando: courses_and_secrets_separate # i know they made TTC less of a nightmare with courses_and_secrets, but cavern of the metal cap still sucks 
+  buddy_checks: 'true'
+  exclamation_boxes: 'true'
+  enable_move_rando: 'true'
+  stars_to_finish: 75
+
+---
+
+name: ChromaAttack{NUMBER}
+game: Tetris Attack
+
+Tetris Attack:
+  progression_balancing: random-low
+  stage_clear_goal: 'true'
+  puzzle_goal: no_puzzle
+  versus_goal: normal
+  stage_clear_mode:
+    incremental: 1
+    skippable: 1
+  special_stage_trap_count: 30 # bowser gets a little lonely sometimes. so he'll drop by to say hello...several times
+  special_stage_hp_multiplier: 1
+
+---
+
+name: ChromaDice{NUMBER}
+game: Yacht Dice
+
+Yacht Dice:
+  progression_balancing: random-low
+  game_difficulty: hard
+  score_for_goal: random-high
+  minimal_number_of_dice_and_rolls:
+    5_dice_and_5_rolls: 1
+    6_dice_and_4_rolls: 1
+    7_dice_and_3_rolls: 1
+    8_dice_and_2_rolls: 1
+  number_of_dice_fragments_per_dice: 5
+  number_of_roll_fragments_per_roll: 5
+  percentage_alternative_categories: random
+  weight_of_dice: random-low
+  weight_of_roll: random-low
+  weight_of_fixed_score_multiplier: random
+  weight_of_double_category: random
+  weight_of_points: random
+  points_size: mix
+  # this is only 50 guaranteed scores, but yacht dice will add more scores than just these. normally the back of a yacht dice game is pretty sparse checkwise, so this should boost it above the minimum
+  include_scores: ['20', '40', '60', '80', '100', '120', '140', '160', '180', '200', '220', '240', '260', '280', '300', '320', '340', '360', '380', '400', '420', '440', '460', '480', '500', '520', '540', '560', '580', '600', '620', '640', '660', '680', '700', '720', '740', '760', '780', '800', '820', '840', '860', '880', '900', '920', '940', '960', '980', '1000']

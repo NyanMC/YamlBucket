@@ -1,0 +1,94 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Pride Month Sync
+# Games: Jigsaw, Undertale Beta, Clique x5
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+# This jigsaw is intended to be used with the following image:
+# https://i.imgur.com/4STToIC.png
+Jigsaw:
+  progression_balancing: 30
+  number_of_pieces: 144
+  orientation_of_image: square
+  percentage_of_extra_pieces: 20
+  minimum_number_of_pieces_per_bundle: 5
+  add_fillers: 'false'
+  checks_out_of_logic: 10
+  piece_order: every_piece_fits
+  strictness_piece_order: 90
+
+---
+
+name: ChromaTale{NUMBER}
+game: Undertale
+
+Undertale:
+  progression_balancing: 50
+  route_required: neutral
+  starting_area: ruins
+  guaranteed_filler: 20
+  hub_shop_cost: 100
+  key_hunt: 'true'
+  key_pieces: 10
+  extra_key_pieces: 5
+  rando_item_button: 'true'
+
+  # it's neutral but i'm still forcing myself to be nice
+  spare_sanity: 'true'
+  spare_sanity_max: 10
+  spare_sanity_pack_size: 2
+
+  ice_traps: 10
+  prog_armor: 'true'
+  prog_weapons: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: white
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: pink
+  hard_mode: 'true'
+
+---
+
+name: ChromaClique{number}
+game: Clique
+
+Clique:
+  progression_balancing: 0
+  color: blue
+  hard_mode: 'true'

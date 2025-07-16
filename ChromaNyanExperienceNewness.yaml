@@ -1,0 +1,22 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Experience Newness
+# Games: Sonic the Hedgehog 1
+
+name: ChromaSonic1{NUMBER}
+game: Sonic the Hedgehog 1
+
+Sonic the Hedgehog 1:
+  progression_balancing: random-low
+  no_local_keys: 'true'
+  available_rings: 150
+  pow_invinc: 8
+  pow_shield: 8
+  pow_speeds: 8
+  pow_ss_trap_flag: 'true'
+  emerald_goal: 6
+  boss_goal: 6
+  specials_goal: 6
+  ring_goal: 100
+  final_zone_last: always_last
+  # AFAIK shiny rings are the ones absolutely needed to goal. basically i want most my goal macguffins to be local while allowing others to find them for me
+  local_items: Shiny Ring

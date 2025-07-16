@@ -1,0 +1,34 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Pride Year Sync
+# Games: Jigsaw, Wario Land 4
+
+name: ChromaJigsaw{NUMBER}
+game: Jigsaw
+
+Jigsaw:
+  progression_balancing: 30
+  number_of_pieces: 144
+  orientation_of_image: square
+  percentage_of_extra_pieces: 20
+  add_fillers: 'false'
+  checks_out_of_logic: 5
+  piece_order_type: corners_edges_normal
+  piece_order: every_piece_fits
+  strictness_piece_order: 80
+
+---
+
+name: ChromaLand4{NUMBER}
+game: Wario Land 4
+
+Wario Land 4:
+  progression_balancing: 40
+  goal: golden_treasure_hunt
+  golden_treasure_count: 12
+  required_jewels: 2
+  portal: open
+  send_locations_to_server: immediately
+  smash_through_hard_blocks: 'true'
+  music_shuffle: levels_only
+  wario_voice_shuffle: 'true'
+  non_local_items: Everything
