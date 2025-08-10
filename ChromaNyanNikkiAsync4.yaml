@@ -51,7 +51,7 @@ Undertale:
   plando_items:
     - item:
         ITEM: 1
-      location: The Big Red Button
+      location: The Button
       from_pool: true
       world: ChromaBONUS
       force: true
@@ -249,4 +249,4 @@ Clique:
   progression_balancing: '0'
   color: random
   hard_mode: 'true'
-  start_location_hints: The Big Red Button
+  start_location_hints: The Button

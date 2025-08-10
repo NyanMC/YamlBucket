@@ -1,0 +1,1 @@
+0.6.2 broke Minecraft and Minecraft Dig. There is no way to make them work as of now. These yamls are, therefore, broken, possibly forever.
