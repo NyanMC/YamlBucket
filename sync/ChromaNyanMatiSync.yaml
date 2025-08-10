@@ -1,0 +1,22 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: "it doesn't matter in the slightest"
+#             AKA Sync Game in 30 minutes
+#             AKA Mati sync in Aegis Proxima
+# Games: DOOM 1993
+name: CHROMADOOM{NUMBER}
+game: DOOM 1993
+
+DOOM 1993:
+  progression_balancing: 50
+  goal: complete_boss_levels
+  random_monsters: random_balanced
+  random_pickups: random_balanced
+  random_music: shuffle_selected
+  start_with_computer_area_maps: 'true'
+  reset_level_on_death: 'false'
+  episode1: 'true'
+  episode2: 'true'
+  episode3: 'true'
+  episode4: 'false' # i'd rather pour river water in my socks
+  split_backpack: 'true'
+  backpack_count: 3

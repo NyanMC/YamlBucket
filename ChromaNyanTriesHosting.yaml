@@ -1,0 +1,45 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: ChromaNyan Tries Hosting
+# Games: Celeste 64, Here Comes Niko!
+
+name: ChromaCel64{NUMBER}
+game: Celeste 64
+
+Celeste 64:
+  progression_balancing: random-low
+  move_shuffle: 'true'
+  total_strawberries: 30
+  strawberries_required_percentage: 80
+  friendsanity: 'true'
+  signsanity: 'true'
+  carsanity: 'true'
+  checkpointsanity: 'true'
+
+---
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: random-low
+  goal_completion: hired
+  min_kiosk_cost: 0
+  max_kiosk_cost: 50
+  min_elevator_cost: 60
+  max_elevator_cost: 70
+  shuffle_handsome_frog: 'true'
+  access_garys_garden: garden
+  snail_shop: 'true'
+  level_based_keys: 'false'
+  bonk_permit: 'true'
+  bug_catching: 'true'
+  soda_cans: 'true'
+  parasols: 'true'
+  swimming: 'true'
+  textbox: 'false'
+  ac_repair: 'true'
+  fishsanity: location
+  seedsanity: location
+  flowersanity: location
+  bonesanity: location
+  thoughtsanity: 'true'

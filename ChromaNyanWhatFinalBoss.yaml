@@ -1,0 +1,67 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Archipelazura - What's a "Final Boss"?
+# Game: Here Comes Niko!
+
+name: ChromaNiko{NUMBER}
+game: Here Comes Niko!
+
+Here Comes Niko!:
+  progression_balancing: random-low
+  death_link: 'true'
+  trap_link: 'true'
+  goal_completion: employee # hired technically has a final boss. not the kind the async forbids but it's funny to joke about
+  min_kiosk_cost: 0
+  max_kiosk_cost: 70
+  min_elevator_cost: random # elevator doesn't matter besides like one check so just do a meme cost
+  max_elevator_cost: random
+  cassette_logic:
+    level_based: 1
+    progressive: 0
+    scattered: 1
+  shuffle_handsome_frog: 'true'
+  shuffle_garys_garden: 'true'
+  access_garys_garden: garden
+  snail_shop: 'true'
+  level_based_keys: random
+  progressive_contact_list: 'true'
+  bonk_permit: 'true'
+  soda_cans: 'true'
+  parasols: 'true'
+  swimming: 'true'
+  ac_repair: 'true'
+  fishsanity: random
+  seedsanity: random
+  flowersanity: random
+  bonesanity: random
+  thoughtsanity: random
+  local_items: Coin
+  
+  # not actually an option, this is just a trigger. i actually respect the multiworld and don't want to have a 1000 location game.
+  # ...but i still want many locations, so pick a random big sanity to enable
+  major_sanity:
+    applesanity: 1
+    bugsanity: 1
+    chatsanity: 1
+
+  triggers:
+    - option_category: Here Comes Niko!
+      option_name: major_sanity
+      option_result: applesanity
+      options:
+        Here Comes Niko!:
+          applesanity: true
+          applebasket: true
+    - option_category: Here Comes Niko!
+      option_name: major_sanity
+      option_result: bugsanity
+      options:
+        Here Comes Niko!:
+          bugsanity: true
+          bug_catching: true
+    - option_category: Here Comes Niko!
+      option_name: major_sanity
+      option_result: chatsanity
+      options:
+        Here Comes Niko!:
+          chatsanity: level_based
+          textbox: true

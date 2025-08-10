@@ -1,0 +1,82 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: failure condition async
+# Game: A Hat in Time
+
+name: ChromaHat{NUMBER}
+game: A Hat in Time
+
+A Hat in Time:
+  progression_balancing: random-low
+  EndGoal: finale
+  ShuffleAlpineZiplines: 'true'
+  ShuffleSubconPaintings: 'true'
+  MinPonCost: 50
+  MaxPonCost: 200
+  LowestChapterCost: 5
+  HighestChapterCost: 30
+  ChapterCostIncrement: 5
+  ChapterCostMinDifference: 5
+  FinalChapterMinCost: 30 # we have 10 time pieces of lenience here. incredibly generous, i know
+  FinalChapterMaxCost: 30
+  HatItems: 'true'
+  UmbrellaLogic: 'true'
+  MaxExtraTimePieces: 0
+  EnableDLC1: 'true'
+  Tasksanity: 'true'
+  TasksanityCheckCount: 15
+  EnableDLC2: 'true'
+  MetroMinPonCost: 10
+  MetroMaxPonCost: 200
+  NyakuzaThugMinShopItems: 1
+  NyakuzaThugMaxShopItems: 1
+  EnableDeathWish: 'true'
+  DWTimePieceRequirement: 0
+  DWShuffle: 'true'
+  DWShuffleCountMin: 25
+  DWShuffleCountMax: 25
+  DWExcludeCandles: 'false'
+  TrapChance: 10
+  BabyTrapWeight: 0
+  LaserTrapWeight: 0
+  local_items:
+    - Parade Trap
+    - Time Piece
+
+  exclude_locations:
+    # allow doing the QVM skip
+    - Queen Vanessa's Manor - Hall Chest
+    - Queen Vanessa's Manor - Bedroom Chest
+    # i suck at these. get rid of them as a possibility
+    - Encore! Encore! - Main Objective
+    - Killing Two Birds - Main Objective
+    - Breaching the Contract - Main Objective
+    - The Illness has Speedrun - Main Objective
+    - No More Bad Guys - Main Objective
+
+  priority_locations:
+    # i certainly won't regret this
+    - 10 Seconds until Self-Destruct - Main Objective
+    - Beat the Heat - Main Objective
+    - Bird Sanctuary - Main Objective
+    - Collect-a-thon - Main Objective
+    - "Community Rift: Rhythm Jump Studio - Main Objective"
+    - "Community Rift: The Mountain Rift - Main Objective"
+    - "Community Rift: Twilight Travels - Main Objective"
+    - Mafia's Jumps - Main Objective
+    - Quality Time with Snatcher - Main Objective
+    - "Rift Collapse: Alpine Skyline - Main Objective"
+    - "Rift Collapse: Dead Bird Studio - Main Objective"
+    - "Rift Collapse: Mafia of Cooks - Main Objective"
+    - "Rift Collapse: Sleepy Subcon - Main Objective"
+    - Security Breach - Main Objective
+    - She Speedran from Outer Space - Main Objective
+    - Snatcher Coins in Alpine Skyline - Main Objective
+    - Snatcher Coins in Battle of the Birds - Main Objective
+    - Snatcher Coins in Mafia Town - Main Objective
+    - Snatcher Coins in Nyakuza Metro - Main Objective
+    - Snatcher Coins in Subcon Forest - Main Objective
+    - Snatcher's Hit List - Main Objective
+    - So You're Back From Outer Space - Main Objective
+    - Speedrun Well - Main Objective
+    - The Great Big Hootenanny - Main Objective
+    - Wound-Up Windmill - Main Objective

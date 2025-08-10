@@ -1,0 +1,22 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Aegis Proxima - Charity Job 1
+# Game: Tetris Attack
+
+name: ChromaAttack{NUMBER} # if you want/need to rename this, go ahead
+game: Tetris Attack
+
+Tetris Attack:
+  progression_balancing: random
+  starter_pack:
+    stage_clear_round_1: 1
+    vs_two_stages: 1
+  stage_clear_goal: 'true'
+  puzzle_goal: no_puzzle
+  versus_goal: normal
+  stage_clear_mode:
+    incremental: 1
+    skippable: 1
+  special_stage_trap_count: random-high # whoever gets this from the bucket is going to despise me
+  special_stage_hp_multiplier: random-range-1-6
+  last_stage_hp_multiplier: random-range-1-6
+  versus_mode: goal_progressive

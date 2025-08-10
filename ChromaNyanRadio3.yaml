@@ -1,0 +1,19 @@
+﻿# https://www.chromanyan.page/yamlheader
+# Multiworld: Radio Archipelago 3
+# Games: Wario Land 4
+
+name: ChromaLand4{NUMBER}
+game: Wario Land 4
+
+Wario Land 4:
+  progression_balancing: random-low
+  goal: golden_treasure_hunt
+  golden_treasure_count: 10
+  required_jewels: 3
+  portal: open
+  pool_jewels: 4
+  diamond_shuffle: 'true'
+  send_locations_to_server: immediately
+  smash_through_hard_blocks: 'true'
+  music_shuffle: disabled
+  non_local_items: Everything
